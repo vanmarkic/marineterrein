@@ -6,10 +6,9 @@ const style = {
     strokeWidth:"8px",
 }
 
-const Fitness = ({fillColor}) => (
+const Fitness = ({fillColor, amount}) => (
 
-        <path id="fitnesstuin" fill={fillColor} d="M1708.8,288.2l105.4,267.6l-225.2,81.2l-60,-147.4l168,-189.2l11.8,-12.2Z" style={style} />
-
+            <polygon id="" points="1709 288, 1814 556, 1589 637, 1529 490, 1697 300, 1709 288" fill={fillColor} style={style} />
 );
 
 export default Fitness

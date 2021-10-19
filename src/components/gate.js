@@ -2,18 +2,20 @@ import { group } from "d3-array"
 import React from "react"
 
 const style = {
-    fillRule:"nonzero",
-    stroke:"#000",
-    strokeWidth:"8px",
+  fillRule: "nonzero",
+  stroke: "#000",
+  strokeWidth: "8px",
 }
 
-const Gate = ({fillColor, amount}) => {
-    console.log(amount)
+const Gate = ({ fillColor, amount }) => {
 
-return (
 
-        <path id="gate" fill={fillColor} d="M2020.8,718l136.8,353.4l398.6,396.2l68,-75.2l-442.4,-423.4l-104.6,-273.2l-56.4,22.2Z" style={style}/>
+  return (
+    <>
 
-)};
+      <polygon id="" points="2021 718, 2158 1071, 2556 1468, 2624 1392, 2182 969, 2077 696, 2021 718" fill={fillColor} style={style} />
+    </>
+  )
+};
 
 export default Gate

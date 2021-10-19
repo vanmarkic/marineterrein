@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Zones from '../components/zones'
+import ZonesRandomPoints from '../components/zonesRandomPoints'
 
 import "../styles/index.css"
 
@@ -87,8 +88,9 @@ const badgeStyle = {
 const IndexPage = () => {
 
   return (
-    <div style={{ maxWidth: "70vw", maxHeight: `70vh`, margin: `auto`, position:`relative`}}>
-        <Zones />
+    <div style={{ maxWidth: "90vw",maxHeight: "95vh"  , margin: `auto`, position: `relative` }}>
+      {/* <Zones /> */}
+      <ZonesRandomPoints />
     </div>
   );
 }
