@@ -118,13 +118,13 @@ const Zones = () => {
 
         <svg width="100%" height="100%" viewBox="0 0 3840 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
           <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.floor(picnicAmount)}</text>
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.round(picnicAmount)}</text>
           <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.floor(waterAmount)}</text>
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.round(waterAmount)}</text>
           <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.floor(fitnessAmount)}</text>
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.round(fitnessAmount)}</text>
           <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.round(gateAmount)}</text>
         </svg>
       </Row>
 

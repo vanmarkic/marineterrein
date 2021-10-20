@@ -1,41 +1,51 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import Slider, { Range, Handle } from 'rc-slider';
 import 'rc-slider/assets/index.css';
-
 import styled from "styled-components"
-import GlobalStyle from "../styles/GlobalStyle"
-
 import * as d3Array from 'd3-array'
-
-
 import { schemeBlues as scheme, interpolateBlues } from 'd3-scale-chromatic'
+import { scaleLinear } from 'd3-scale'
 
+import GlobalStyle from "../styles/GlobalStyle"
+import camData from "../../content/oneyearfourcamsbyday.json"
+
+import weatherData from "../../content/schiphol_weather.json"
 
 import Picnic from "./picnic.js"
 import Water from "./water.js"
 import Fitness from './fitness.js'
 import Gate from "./gate.js"
+import BarChart from './BarChart';
 
-import data from "../../content/oneyearfourcamsbyday.json"
+const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
+const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
+
+const waterMin = d3Array.min(Object.values(camData.content.water))
+const waterMax = d3Array.max(Object.values(camData.content.water))
+const picnicMin = d3Array.min(Object.values(camData.content.picnic))
+const picnicMax = d3Array.max(Object.values(camData.content.picnic))
+const gateMin = d3Array.min(Object.values(camData.content.gate))
+const gateMax = d3Array.max(Object.values(camData.content.gate))
+const fitnessMin = d3Array.min(Object.values(camData.content.fitness))
+const fitnessMax = d3Array.max(Object.values(camData.content.fitness))
+const temperatureMin = d3Array.min(weatherDataAverageTemp)
+const temperatureMax = d3Array.max(weatherDataAverageTemp)
 
 
-const waterMin = d3Array.min(Object.values(data.content.water))
-const waterMax = d3Array.max(Object.values(data.content.water))
-const picnicMin = d3Array.min(Object.values(data.content.picnic))
-const picnicMax = d3Array.max(Object.values(data.content.picnic))
-const gateMin = d3Array.min(Object.values(data.content.gate))
-const gateMax = d3Array.max(Object.values(data.content.gate))
-const fitnessMin = d3Array.min(Object.values(data.content.fitness))
-const fitnessMax = d3Array.max(Object.values(data.content.fitness))
+
 
 const extents = {
   water: { min: waterMin, max: waterMax, range: waterMax - waterMin },
   gate: { min: gateMin, max: gateMax, range: gateMax - gateMin },
   picnic: { min: picnicMin, max: picnicMax, range: picnicMax - picnicMin },
   fitness: { min: fitnessMin, max: fitnessMax, range: fitnessMax - fitnessMin },
+  temperature: { min: temperatureMin, max: temperatureMax, range: temperatureMax - temperatureMin },
+
 }
 
-const sliderStyle = { width: '100%', marginTop: 'auto', marginBottom: 'auto', maxWidth: '75vh' };
+
+const sliderStyle = { width: '85vw', marginTop: 'auto', marginBottom: 'auto' };
 
 const getRatio = (key, amount) => amount / extents[key].range
 
@@ -43,6 +53,34 @@ const getColor = (key, amount) => {
   const ratio = getRatio(key, amount)
   return interpolateBlues(ratio)
 }
+
+const tempColors = scaleLinear()
+  .domain([extents.temperature.min, 10, extents.temperature.max])
+  .range(['cyan', 'white', 'red']);
+
+const temperatureColors = weatherDataAverageTemp.map(t => {
+
+  return tempColors(t)
+})
+
+
+const totalAmountOfVisitors = weatherDataDates.map((el, idx) => {
+  const picnicAmount = camData.content.picnic[el] === undefined ? 10 : camData.content.picnic[el]
+  const fitnessAmount = camData.content.fitness[el] === undefined ? 10 : camData.content.fitness[el]
+  const waterAmount = camData.content.water[el] === undefined ? 10 : camData.content.water[el]
+  const gateAmount = camData.content.gate[el] === undefined ? 10 : camData.content.gate[el]
+  return Math.round(
+    picnicAmount +
+    waterAmount +
+    fitnessAmount +
+    gateAmount
+  )
+
+
+})
+
+
+
 
 const Button = styled.p`
 z-index:100;
@@ -57,7 +95,7 @@ z-index:100;
 `
 const Row = styled.div`
         display: flex;
-        margin: 0;
+     
 
         
 `
@@ -75,18 +113,23 @@ const AmountsContainer = styled.div`
 `
 
 const Thermometer = styled.div`
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         display: flex;
         color: white;
-justify-content: center;
-align-items: center;
-font-size: 1em;
-font-weight: 700;
- margin:15px;
-background: rgb(11,11,11);
-background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        font-weight: 700;
+        margin:15px;
+        background: rgb(11,11,11);
+        background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
+`
+
+
+const Metrics = styled.h2`
+  margin:0px;
 `
 
 const Bar = styled.div`
@@ -116,14 +159,16 @@ const ZonesRandomPoints = () => {
   const [intervalId, setIntervalId] = useState(undefined);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  let picnicAmount = data.content.picnic[Object.keys(data.content.picnic)[dateIndex]]
-  let waterAmount = data.content.water[Object.keys(data.content.water)[dateIndex]]
-  let fitnessAmount = data.content.fitness[Object.keys(data.content.fitness)[dateIndex]]
-  let gateAmount = data.content.gate[Object.keys(data.content.gate)[dateIndex]]
+  let picnicAmount = camData.content.picnic[weatherDataDates[dateIndex]]
+  let waterAmount = camData.content.water[weatherDataDates[dateIndex]]
+  let fitnessAmount = camData.content.fitness[weatherDataDates[dateIndex]]
+  let gateAmount = camData.content.gate[weatherDataDates[dateIndex]]
 
+  useEffect(() => {
+    if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
+  }, [dateIndex]);
 
   const playSlider = () => {
-    console.log('test')
     if (isPlaying && intervalId) {
       clearInterval(intervalId)
       setIsPlaying(false)
@@ -140,10 +185,9 @@ const ZonesRandomPoints = () => {
 
     <Column>
       <Row style={{ justifyContent: 'flex-end' }}>
-        <Thermometer>
-          30°C
-        </Thermometer>
+
       </Row>
+
 
 
       <Row style={{ height: '65vh' }}>
@@ -159,33 +203,76 @@ const ZonesRandomPoints = () => {
           <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
         </svg>
       </Row>
-     
-      <Row>
-    
-        <h3>{Object.keys(data.content.picnic)[dateIndex]}</h3>
+
+      <Row style={{ justifyContent: "space-evenly" }}>
+
+
+        <Column style={{ alignItems: 'end' }}>
+          <div>temperature</div>
+          <Metrics>
+
+            {weatherDataAverageTemp[dateIndex]}°C
+          </Metrics>
+        </Column>
+        <Column style={{ alignItems: 'end', width: '150px' }}>
+          <div>date</div>
+          <Row>
+            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(8, 11)}   </Metrics>
+            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(5, 7)}  </Metrics>
+            <Metrics>{weatherDataDates[dateIndex].substring(0, 4)}</Metrics>
+          </Row>
+        </Column>
+
+        <Column style={{ alignItems: 'end' }} >
+          <div>visitors</div>
+          <Metrics>
+            {totalAmountOfVisitors[dateIndex]}
+          </Metrics>
+        </Column>
 
       </Row>
 
       <Row>
-        <Row style={sliderStyle}>
-          <Slider
+        <Column>
+          <Row style={sliderStyle}>
 
-            min={0}
-            max={Object.keys(data.content.picnic).length - 1}
-            included={false}
-            onChange={value => setDateIndex(value)}
-            value={dateIndex}
-            railStyle={{ backgroundColor: 'blue', height: 10 }}
-            handleStyle={{
-              borderColor: 'blue',
-              height: 28,
-              width: 28,
-              marginLeft: 0,
-              marginTop: -9,
-              backgroundColor: 'black',
-            }}
-          />
-        </Row>
+            <BarChart data={totalAmountOfVisitors} height="100" width="1000" />
+          </Row>
+          <Row style={sliderStyle}>
+
+
+            <svg height="15" width="100%">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  {temperatureColors.map((color, idx) => {
+                    return (<stop key={idx} offset={idx / (temperatureColors.length - 1)} style={{ "stopColor": color, "stopOpacity": 1 }} />)
+                  })}
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="15" fill="url('#grad1')" />
+            </svg>
+          </Row>
+          <Row style={{ ...sliderStyle, marginTop: "30px" }}>
+            <Slider
+              min={0}
+              max={weatherDataDates.length - 1}
+              included={false}
+              onChange={value => setDateIndex(value)}
+              value={dateIndex}
+              railStyle={{ backgroundColor: 'darkgrey', height: 2 }}
+              handleStyle={{
+                borderColor: 'darkgrey',
+                height: 28,
+                width: 28,
+                marginLeft: 0,
+                marginTop: -13,
+                backgroundColor: 'black',
+              }}
+            />
+
+          </Row>
+
+        </Column>
         <Button onClick={playSlider}>
           {isPlaying ? "pause" : "play"}
         </Button>
