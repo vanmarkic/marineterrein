@@ -45,7 +45,10 @@ const extents = {
 }
 
 
-const sliderStyle = { width: '85vw', marginTop: 'auto', marginBottom: 'auto' };
+const sliderStyle = {
+  // width: '85vw',
+  marginTop: 'auto', marginBottom: 'auto'
+};
 
 const getRatio = (key, amount) => amount / extents[key].range
 
@@ -80,24 +83,24 @@ const totalAmountOfVisitors = weatherDataDates.map((el, idx) => {
 })
 
 
-
-
-const Button = styled.p`
+const Button = styled.div`
 z-index:100;
   border-radius: 3px;
   padding: 0.5rem .5rem;
-  margin: 0.5rem 1rem;
-  width: auto;
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  min-width: 40px;
+  height: 24px;
   background: darkblue;
   color: white;
   cursor: pointer;
+align-self: flex-end;
+justify-content: center;
+text-align: center;
 
 `
 const Row = styled.div`
         display: flex;
-     
-
-        
+        margin:0px;
 `
 
 const Column = styled.div`
@@ -137,6 +140,12 @@ const Bar = styled.div`
   background-color: darkblue;
   height: 20px;
 
+`
+const VerticalNeedle = styled.div`
+  display: block;
+  width:1px;
+  height: 150px;
+  background-color: black;
 `
 
 
@@ -207,23 +216,23 @@ const ZonesRandomPoints = () => {
       <Row style={{ justifyContent: "space-evenly" }}>
 
 
-        <Column style={{ alignItems: 'end' }}>
+        <Column style={{ alignItems: 'center' }}>
           <div>temperature</div>
           <Metrics>
 
             {weatherDataAverageTemp[dateIndex]}°C
           </Metrics>
         </Column>
-        <Column style={{ alignItems: 'end', width: '150px' }}>
+        <Column style={{ alignItems: 'center', width: '200px' }}>
           <div>date</div>
-          <Row>
-            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(8, 11)}   </Metrics>
-            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(5, 7)}  </Metrics>
+          <Row >
+            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(8, 11)}-</Metrics>
+            <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(5, 7)}-</Metrics>
             <Metrics>{weatherDataDates[dateIndex].substring(0, 4)}</Metrics>
           </Row>
         </Column>
 
-        <Column style={{ alignItems: 'end' }} >
+        <Column style={{ alignItems: 'center' }} >
           <div>visitors</div>
           <Metrics>
             {totalAmountOfVisitors[dateIndex]}
@@ -232,11 +241,13 @@ const ZonesRandomPoints = () => {
 
       </Row>
 
-      <Row>
+      <Row
+      // style={{ maxWidth: '95vw' }}
+      >
         <Column>
           <Row style={sliderStyle}>
 
-            <BarChart data={totalAmountOfVisitors} height="100" width="1000" />
+            <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
           </Row>
           <Row style={sliderStyle}>
 
