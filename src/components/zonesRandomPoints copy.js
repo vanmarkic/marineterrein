@@ -149,17 +149,7 @@ const VerticalNeedle = styled.div`
 `
 
 
-const randomPointsOnPolygon = (polygon, count, bbox) => {
-  // bbox = bbox || turf.bbox(polygon);
-  // return d3.range(count).map(() => {
-  //   var point = turf.randomPoint(1, { bbox: bbox });
-  //   if (turf.inside(point.features[0], polygon) === true) {
-  //     return point.features[0];
-  //   } else {
-  //     return randomPointsOnPolygon(polygon, 1, bbox)[0];
-  //   }
-  // });
-}
+
 
 
 const ZonesRandomPoints = () => {

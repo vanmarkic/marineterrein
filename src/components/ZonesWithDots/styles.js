@@ -4,7 +4,7 @@ const style = {
         fillRule: "nonzero",
         stroke: "lightGrey",
         strokeWidth: "10px",
-        fill: 'none'
+        fill: 'WHITE'
     },
     dots: {
         radius: 5,
