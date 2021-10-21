@@ -199,7 +199,7 @@ const ZonesRandomPoints = () => {
 
 
 
-      <Row style={{ height: '65vh'}}>
+      <Row style={{ height: '65vh' }}>
 
         <svg width="100%" height="60vh" viewBox="840 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
           <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
@@ -244,7 +244,15 @@ const ZonesRandomPoints = () => {
       <Row
       // style={{ maxWidth: '95vw' }}
       >
-        <Column>
+        <Column style={{
+          "-webkit-touch-callout": "none",
+          "-webkit-user-select": "none",
+          "-khtml-user-select": "none",
+          "-moz-user-select": "none",
+          "-ms-user-select": "none",
+          "user-select": "none",
+          "-webkit-tap-highlight-color": "rgba(0,0,0,0)"
+        }}>
           <Row style={sliderStyle}>
 
             <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
@@ -287,10 +295,10 @@ const ZonesRandomPoints = () => {
         <Button onClick={playSlider}>
           {isPlaying ? "pause" : "play"}
         </Button>
-      </Row>
+      </Row >
 
 
-    </Column>
+    </Column >
   )
 }
 export default ZonesRandomPoints

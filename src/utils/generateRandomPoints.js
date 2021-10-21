@@ -20,6 +20,5 @@ export default function randomPointsOnPolygon(path, count, bbox) {
         }
     });
 
-    console.log(coordinatesArray)
     return coordinatesArray
 }
