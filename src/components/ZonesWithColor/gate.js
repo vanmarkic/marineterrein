@@ -1,4 +1,4 @@
-import { group } from "d3-array"
+
 import React from "react"
 
 const style = {
@@ -7,7 +7,7 @@ const style = {
   strokeWidth: "8px",
 }
 
-const Gate = ({ fillColor, amount }) => {
+const Gate = ({ fillColor }) => {
 
 
   return (

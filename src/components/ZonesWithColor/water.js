@@ -6,7 +6,7 @@ const style = {
   strokeWidth: "8px",
 }
 
-const Water = ({ fillColor, amount}) => (
+const Water = ({ fillColor}) => (
 
   <>
 

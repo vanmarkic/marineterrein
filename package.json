@@ -1,32 +1,36 @@
 {
-  "name": "marineterrein",
-  "version": "1.0.0",
-  "private": true,
-  "description": "marineterrein",
-  "author": "Dragan Markovic",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@svgr/webpack": "^5.5.0",
-    "babel-plugin-styled-components": "^1.13.2",
-    "d3": "^7.0.4",
-    "gatsby": "^3.13.1",
-    "gatsby-plugin-react-svg": "^3.0.1",
-    "gatsby-plugin-styled-components": "^4.14.0",
-    "gatsby-plugin-svgr": "^3.0.0-beta.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.3.1"
-  },
-  "devDependencies": {
-    "rc-slider": "^9.7.4"
-  }
+    "name": "marineterrein",
+    "version": "1.0.0",
+    "private": true,
+    "description": "marineterrein",
+    "author": "Dragan Markovic",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "@svgr/webpack": "^5.5.0",
+        "@turf/boolean-point-in-polygon": "^6.5.0",
+        "@turf/random": "^6.5.0",
+        "babel-plugin-styled-components": "^1.13.2",
+        "d3": "^7.0.4",
+        "gatsby": "^3.13.1",
+        "gatsby-plugin-react-svg": "^3.0.1",
+        "gatsby-plugin-styled-components": "^4.14.0",
+        "gatsby-plugin-svgr": "^3.0.0-beta.0",
+        "point-in-svg-polygon": "^1.0.25",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "styled-components": "^5.3.1",
+        "svg-path-bbox": "^1.0.1"
+    },
+    "devDependencies": {
+        "rc-slider": "^9.7.4"
+    }
 }

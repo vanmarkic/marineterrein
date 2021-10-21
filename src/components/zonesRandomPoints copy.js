@@ -199,7 +199,7 @@ const ZonesRandomPoints = () => {
 
 
 
-      <Row style={{ height: '65vh'}}>
+      <Row style={{ height: '65vh' }}>
 
         <svg width="100%" height="60vh" viewBox="840 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
           <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />

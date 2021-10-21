@@ -5,15 +5,9 @@ import React, { useRef, useEffect } from 'react';
 const BarChart = ({ width, height, data }) => {
   const ref = useRef();
 
-  useEffect(() => {
-    const svg = d3.select(ref.current)
-      .attr("width", width)
-      .attr("height", height)
-      .style("border", "1px solid black")
-  }, []);
 
   useEffect(() => {
-    console.log(data)
+
     AreaChart(data, {
       x: (d, idx) => idx,
       y: d => d,
@@ -23,7 +17,7 @@ const BarChart = ({ width, height, data }) => {
       color: "steelblue"
     })
 
-  }, [data]);
+  }, [data, width]);
 
   function AreaChart(data, {
     x = ([x]) => x, // given d in data, returns the (temporal) x-value
