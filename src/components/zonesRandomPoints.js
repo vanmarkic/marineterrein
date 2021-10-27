@@ -17,7 +17,7 @@ import Water from "./ZonesWithDots/water.js"
 import Fitness from './ZonesWithDots/fitness.js'
 import Gate from "./ZonesWithDots/gate.js"
 import BarChart from './BarChart';
-import { MarineTerreinSvgMap } from './MarineTerreinSvgMap';
+import MarineTerreinSvgMap from './MarineTerreinSvgMap.jsx';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -163,7 +163,7 @@ const ZonesRandomPoints = () => {
 
   useEffect(() => {
     if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
-  }, [dateIndex]);
+  }, [dateIndex, intervalId]);
 
   const playSlider = () => {
     if (isPlaying && intervalId) {
