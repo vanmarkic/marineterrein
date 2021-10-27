@@ -23,7 +23,7 @@ const Water = ({ amount }) => {
 
   return (<>
     <path id="water" fill="white" d={polygonPoints} style={style.zones} />
-    {randomPoints && randomPoints.map(point => (<circle fill={style.dots.fill} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
+    {randomPoints && randomPoints.map((point,index) => (<circle key={index} fill={style.dots.fill} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
   </>
 
   );

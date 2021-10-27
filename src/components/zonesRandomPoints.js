@@ -236,13 +236,13 @@ const ZonesRandomPoints = () => {
       // style={{ maxWidth: '95vw' }}
       >
         <Column style={{
-          "-webkit-touch-callout": "none",
-          "-webkit-user-select": "none",
-          "-khtml-user-select": "none",
-          "-moz-user-select": "none",
-          "-ms-user-select": "none",
-          "user-select": "none",
-          "-webkit-tap-highlight-color": "rgba(0,0,0,0)"
+          "WebkitTouchCallout": "none",
+          "WebkitUserSelect": "none",
+          "KhtmlUserSelect": "none",
+          "MozUserSelect": "none",
+          "MsUserSelect": "none",
+          "UserSelect": "none",
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)"
         }}>
           <Row style={sliderStyle}>
 

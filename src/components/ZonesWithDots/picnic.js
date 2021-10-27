@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useMemo, memo } from "react"
 
 import generateRandomPoints from '../../utils/generateRandomPoints'
 
@@ -16,11 +16,13 @@ const Picnic = ({ amount }) => {
 
   useEffect(() => {
     if (amount > 0) {
-      setRandomPoints(generateRandomPoints(polygonPoints, Math.floor(amount)))
+      setRandomPoints(memoizedValue)
     }
 
   }, [amount]);
 
+
+  const memoizedValue = useMemo(() => generateRandomPoints(polygonPoints, Math.floor(amount)), [amount]);
 
 
 
@@ -28,7 +30,7 @@ const Picnic = ({ amount }) => {
 
     <g>
       <path id="picnic" d={polygonPoints} fill="white" style={style.zones} />
-      {randomPoints && randomPoints.map(point => (<circle fill={style.dots.fill} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
+      {randomPoints && randomPoints.map((point, index) => (<circle key={index} fill={style.dots.fill} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
     </g>
 
 
@@ -36,4 +38,4 @@ const Picnic = ({ amount }) => {
   );
 }
 
-export default Picnic
+export default memo(Picnic)
