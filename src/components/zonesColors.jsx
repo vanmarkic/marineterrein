@@ -1,25 +1,32 @@
 import React, { useEffect, useState } from 'react';
 
-import Slider, { Range, Handle } from 'rc-slider';
+import Slider, { Range, Handle, SliderTooltip } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
-import { schemeBlues as scheme, interpolateBlues } from 'd3-scale-chromatic'
-import { scaleLinear } from 'd3-scale'
+import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
+import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
 
 import GlobalStyle from "../styles/GlobalStyle"
 import camData from "../../content/oneyearfourcamsbyday.json"
+import densityPeakPerDay from "../../content/density_day.json"
 
 import weatherData from "../../content/schiphol_weather.json"
 
-import Picnic from "./ZonesWithDots/picnic"
-import Water from "./ZonesWithDots/water.js"
-import Fitness from './ZonesWithDots/fitness.js'
-import Gate from "./ZonesWithDots/gate.js"
+import Picnic from "./ZonesWithColor/picnic"
+import Water from "./ZonesWithColor/water"
+import Fitness from './ZonesWithColor/fitness'
+import Gate from "./ZonesWithColor/gate"
 import BarChart from './BarChart';
+import { newFunction } from './newFunction';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
+
+
+const minDensity = d3Array.min(Object.values(densityPeakPerDay).map(el => el))
+const maxDensity = d3Array.max(Object.values(densityPeakPerDay).map(el => el.SwimmingArea))
+
 
 const waterMin = d3Array.min(Object.values(camData.content.water))
 const waterMax = d3Array.max(Object.values(camData.content.water))
@@ -45,17 +52,33 @@ const extents = {
 }
 
 
+let myData = [0, 1, 2, 3, 4];
+
+let quantileScale = scaleQuantile()
+  .domain(myData)
+  .range(['#ffffb2"', '#fecc5c', '#fd8d3c', "#e31a1c"]);
+
+let thresholdScale = scaleThreshold()
+  .domain([0, 1, 2, 3, 4])
+  .range(['white', "#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]);
+
+
+
 const sliderStyle = {
   // width: '85vw',
   marginTop: 'auto', marginBottom: 'auto'
 };
 
-const getRatio = (key, amount) => amount / extents[key].range
+// const getRatio = (key, amount) => amount / extents[key].range
 
-const getColor = (key, amount) => {
-  const ratio = getRatio(key, amount)
-  return interpolateBlues(ratio)
-}
+// const getColor = (key, density) => {
+//   // const ratio = getRatio(key, amount)
+//   // return interpolateYlOrRd(ratio)
+// // TODO create 4 discrete values/colors based on differents densities
+//   // ["#ffffb2","#fecc5c","#fd8d3c","#e31a1c"]
+
+//    return 
+// }
 
 const tempColors = scaleLinear()
   .domain([extents.temperature.min, 10, extents.temperature.max])
@@ -143,16 +166,13 @@ const Bar = styled.div`
 `
 const VerticalNeedle = styled.div`
   display: block;
-  width:1px;
+  width: ·1px;
   height: 150px;
   background-color: black;
 `
 
 
-
-
-
-const ZonesRandomPoints = () => {
+const ZonesColors = () => {
 
   const [dateIndex, setDateIndex] = useState(0);
   const [intervalId, setIntervalId] = useState(undefined);
@@ -162,6 +182,27 @@ const ZonesRandomPoints = () => {
   let waterAmount = camData.content.water[weatherDataDates[dateIndex]]
   let fitnessAmount = camData.content.fitness[weatherDataDates[dateIndex]]
   let gateAmount = camData.content.gate[weatherDataDates[dateIndex]]
+
+  let picnicDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
+    densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'] != ''
+    ?
+    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'])
+    : 'no measure'
+  let waterDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
+    densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'] != ''
+    ?
+    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'])
+    : 'no measure'
+  let fitnessDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
+    densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'] != ''
+    ?
+    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'])
+    : 'no measure'
+  let gateDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
+    densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'] != ''
+    ?
+    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'])
+    : 'no measure'
 
   useEffect(() => {
     if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
@@ -180,6 +221,8 @@ const ZonesRandomPoints = () => {
 
 
 
+
+
   return (
 
     <Column>
@@ -191,16 +234,18 @@ const ZonesRandomPoints = () => {
 
       <Row style={{ height: '65vh' }}>
 
-        <svg width="100%" height="60vh" viewBox="840 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
-          <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.floor(picnicAmount)}</text>
-          <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.floor(waterAmount)}</text>
-          <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.floor(fitnessAmount)}</text>
-          <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
+        <svg width="100%" height="60vh" viewBox="1400 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
+          {newFunction()}
+          <Picnic fillColor={thresholdScale(picnicDensity)} amount={picnicDensity} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{picnicDensity}</text>
+          <Water fillColor={thresholdScale(waterDensity)} amount={waterDensity} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{waterDensity}</text>
+          <Fitness fillColor={thresholdScale(fitnessDensity)} amount={fitnessDensity} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{fitnessDensity}</text>
+          <Gate fillColor={thresholdScale(gateDensity)} amount={gateDensity} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{gateDensity}</text>
         </svg>
+
       </Row>
 
       <Row style={{ justifyContent: "space-evenly" }}>
@@ -234,7 +279,15 @@ const ZonesRandomPoints = () => {
       <Row
       // style={{ maxWidth: '95vw' }}
       >
-        <Column>
+        <Column style={{
+          "WebkitTouchCallout": "none",
+          "WebkitUserSelect": "none",
+          "KhtmlUserSelect": "none",
+          "MozUserSelect": "none",
+          "MsUserSelect": "none",
+          "UserSelect": "none",
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)"
+        }}>
           <Row style={sliderStyle}>
 
             <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
@@ -255,6 +308,7 @@ const ZonesRandomPoints = () => {
           </Row>
           <Row style={{ ...sliderStyle, marginTop: "30px" }}>
             <Slider
+              marks={{ 20: 'test', 40: 'it works' }}
               min={0}
               max={weatherDataDates.length - 1}
               included={false}
@@ -269,6 +323,7 @@ const ZonesRandomPoints = () => {
                 marginTop: -13,
                 backgroundColor: 'black',
               }}
+              dotStyle={{backgroundColor: 'black'}}
             />
 
           </Row>
@@ -277,10 +332,12 @@ const ZonesRandomPoints = () => {
         <Button onClick={playSlider}>
           {isPlaying ? "pause" : "play"}
         </Button>
-      </Row>
+      </Row >
 
 
-    </Column>
+    </Column >
   )
 }
-export default ZonesRandomPoints
+export default ZonesColors
+
+
