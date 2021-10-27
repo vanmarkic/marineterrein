@@ -7,7 +7,7 @@ import * as d3Array from 'd3-array'
 import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
 import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
 
-import GlobalStyle from "../styles/GlobalStyle"
+
 import camData from "../../content/oneyearfourcamsbyday.json"
 import densityPeakPerDay from "../../content/density_day.json"
 
@@ -57,15 +57,15 @@ const extents = {
 
 // }
 
-let myData = [0, 1, 2, 3,4];
+let myData = [0, 1, 2, 3, 4];
 
 let quantileScale = scaleQuantile()
   .domain(myData)
-  .range(['#ffffb2"', '#fecc5c', '#fd8d3c',"#e31a1c"]);
+  .range(['#ffffb2"', '#fecc5c', '#fd8d3c', "#e31a1c"]);
 
 let thresholdScale = scaleThreshold()
   .domain([1, 2, 3])
-  .range(['#ffffb2"', '#fecc5c', '#fd8d3c',"#e31a1c"]);
+  .range(['#ffffb2"', '#fecc5c', '#fd8d3c', "#e31a1c"]);
 
 
 
@@ -79,10 +79,10 @@ const getRatio = (key, amount) => amount / extents[key].range
 const getColor = (key, amount) => {
   // const ratio = getRatio(key, amount)
   // return interpolateYlOrRd(ratio)
-// TODO create 4 discrete values/colors based on differents densities
+  // TODO create 4 discrete values/colors based on differents densities
   // ["#ffffb2","#fecc5c","#fd8d3c","#e31a1c"]
 
-   return thresholdScale()
+  return thresholdScale()
 }
 
 const tempColors = scaleLinear()
@@ -135,9 +135,17 @@ const Column = styled.div`
         display: flex;
         max-height: 95vh;
         flex-direction: column;
-       
+`
+
+const FirstPart = styled.div`
+     display: flex;
+        max-height: 95vh;
+        flex-direction: row;
+
 
 `
+
+
 const AmountsContainer = styled.div`
         max-width: 250px;
         min-width: 250px;

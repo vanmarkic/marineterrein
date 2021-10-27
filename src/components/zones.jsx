@@ -3,7 +3,6 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 import styled from "styled-components"
-import GlobalStyle from "../styles/globalStyle"
 
 import * as d3Array from 'd3-array'
 

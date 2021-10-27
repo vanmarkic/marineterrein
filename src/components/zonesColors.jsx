@@ -7,7 +7,6 @@ import * as d3Array from 'd3-array'
 import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
 import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
 
-import GlobalStyle from "../styles/GlobalStyle"
 import camData from "../../content/oneyearfourcamsbyday.json"
 import densityPeakPerDay from "../../content/density_day.json"
 
