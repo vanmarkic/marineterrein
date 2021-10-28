@@ -4,8 +4,16 @@ import Slider, { Range, Handle, SliderTooltip } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
-import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
+// import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
 import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
+
+
+import XS from "../images/0-10.png"
+import S from "../images/10-20.png"
+import M from "../images/20-30.png"
+import L from "../images/30-40.png"
+
+import breakpoint from '../styles/globalStyle'
 
 import camData from "../../content/oneyearfourcamsbyday.json"
 import densityPeakPerDay from "../../content/density_day.json"
@@ -53,13 +61,18 @@ const extents = {
 
 let myData = [0, 1, 2, 3, 4];
 
+let densityColors = ['white', "#ffffb2", "#fecc5c", "#fd8d3c", "#bd0026"]
+let densityLabels = ['no data', "0-10", "10-20", "20-30", "30-40"]
+let densityPictures = ['no-data', "0-10", "10-20", "20-30", "30-40"]
+
+
 let quantileScale = scaleQuantile()
   .domain(myData)
   .range(['#ffffb2"', '#fecc5c', '#fd8d3c', "#e31a1c"]);
 
 let thresholdScale = scaleThreshold()
-  .domain([0, 1, 2, 3, 4])
-  .range(['white', "#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]);
+  .domain([0, 1, 2, 3])
+  .range(densityColors);
 
 
 
@@ -125,13 +138,94 @@ const Row = styled.div`
         margin:0px;
 `
 
-const Column = styled.div`
+const Wrapper = styled.div`
         display: flex;
-        max-height: 95vh;
-        flex-direction: column;
-       
 
+        flex-direction: column;
+align-items: center;
+
+
+
+   display: flex;
+    flex-direction:column;
+    @media only screen and ${breakpoint.device.xs}{
+      height:95vh;
+justify-content: space-between;
+width:90vw;
+margin:auto;
+
+    }
+    @media only screen and ${breakpoint.device.sm}{
+         justify-content: space-between;
+padding:20px;
+    }
+    @media only screen and ${breakpoint.device.lg}{
+        justify-content: space-between;
+padding:20px;
+padding: 100px , 0px;
+    }
+      
 `
+const TopComponent = styled.div`
+    display: flex;
+    flex-direction:column;
+    @media only screen and ${breakpoint.device.xs}{
+        flex-direction: column;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        flex-direction: row;
+    }
+    @media only screen and ${breakpoint.device.lg}{
+        flex-direction: row;
+justify-content: space-around;
+width:95vw;
+
+    }
+`;
+const LegendWrapper = styled.div`
+
+    display: flex;
+    flex-direction:column;
+    @media only screen and ${breakpoint.device.xs}{
+        flex-direction: row;
+        max-width:95vw;
+        margin: auto;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        flex-direction: column;
+margin: 50px 0px;
+
+    }
+    @media only screen and ${breakpoint.device.lg}{
+
+        flex-direction:column;
+        margin: 50px 0px;
+    }
+`;
+const Legend = styled.div`
+
+    display: flex;
+    flex-direction:row;
+    @media only screen and ${breakpoint.device.xs}{
+        flex-direction: column;
+        align-items: center;
+    }
+    @media only screen and ${breakpoint.device.sm}{
+        flex-direction: row;
+        align-items: center;
+flex-wrap: wrap;
+justify-content: flex-end;
+    }
+    @media only screen and ${breakpoint.device.lg}{
+        display: flex;
+        flex-direction:row;
+        margin: 10px 0px;
+        width: 20vw;
+        justify-content: space-between;
+    }
+`;
+
+
 const AmountsContainer = styled.div`
         max-width: 250px;
         min-width: 250px;
@@ -169,6 +263,15 @@ const VerticalNeedle = styled.div`
   height: 150px;
   background-color: black;
 `
+
+// const DensityLabel = ({ label, color, picture }) => (
+//     <Picture file={picture} />
+// )
+
+const DensityLabel = styled.div(({ label, color, picture }) => `
+    min-width: 400px;  
+    background-image: url("../images/${picture}.png");
+`)
 
 
 const ZonesColors = () => {
@@ -224,16 +327,14 @@ const ZonesColors = () => {
 
   return (
 
-    <Column>
-      <Row style={{ justifyContent: 'flex-end' }}>
-
-      </Row>
+    <Wrapper>
 
 
 
-      <Row style={{ height: '65vh' }}>
 
-        <svg width="100%" height="60vh" viewBox="1400 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
+      <TopComponent>
+
+        <svg width="100%" height="55vh" viewBox="1500 100 2000 1900" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
           {newFunction()}
           <Picnic fillColor={thresholdScale(picnicDensity)} amount={picnicDensity} />
           <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{picnicDensity}</text>
@@ -244,48 +345,74 @@ const ZonesColors = () => {
           <Gate fillColor={thresholdScale(gateDensity)} amount={gateDensity} />
           <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{gateDensity}</text>
         </svg>
+        <LegendWrapper>
 
-      </Row>
+          <Legend>
+            <img src={XS} width="100"></img>
+            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[1] }} ></div>
+            <div>0 - 1O</div>
+          </Legend>
+          <Legend>
+            <img src={S} width="100"></img>
+            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[2] }} ></div>
+            <div>1O - 20</div>
+          </Legend>
+          <Legend>
+            <img src={M} width="100"></img>
+            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[3] }} ></div>
+            <div>20 - 30</div>
+          </Legend>
+          <Legend>
+            <img src={L} width="100"></img>
+            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[4] }} ></div>
+            <div>30 - 40</div>
+          </Legend>
 
-      <Row style={{ justifyContent: "space-evenly" }}>
+
+        </LegendWrapper>
+
+      </TopComponent>
+
+      <Row style={{ justifyContent: "space-evenly",width: "100%" }}>
 
 
-        <Column style={{ alignItems: 'center' }}>
+        <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
           <div>temperature</div>
           <Metrics>
 
             {weatherDataAverageTemp[dateIndex]}°C
           </Metrics>
-        </Column>
-        <Column style={{ alignItems: 'center', width: '200px' }}>
+        </div>
+        <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', width: '200px' }}>
           <div>date</div>
           <Row >
             <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(8, 11)}-</Metrics>
             <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(5, 7)}-</Metrics>
             <Metrics>{weatherDataDates[dateIndex].substring(0, 4)}</Metrics>
           </Row>
-        </Column>
+        </div>
 
-        <Column style={{ alignItems: 'center' }} >
+        <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }} >
           <div>visitors</div>
           <Metrics>
             {totalAmountOfVisitors[dateIndex]}
           </Metrics>
-        </Column>
+        </div>
 
       </Row>
 
       <Row
       // style={{ maxWidth: '95vw' }}
       >
-        <Column style={{
+        <div style={{
           "WebkitTouchCallout": "none",
           "WebkitUserSelect": "none",
           "KhtmlUserSelect": "none",
           "MozUserSelect": "none",
           "MsUserSelect": "none",
           "UserSelect": "none",
-          "WebkitTapHighlightColor": "rgba(0,0,0,0)"
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          display: 'flex', flexDirection: 'column',
         }}>
           <Row style={sliderStyle}>
 
@@ -322,19 +449,19 @@ const ZonesColors = () => {
                 marginTop: -13,
                 backgroundColor: 'black',
               }}
-              dotStyle={{backgroundColor: 'black'}}
+              dotStyle={{ backgroundColor: 'black' }}
             />
 
           </Row>
 
-        </Column>
+        </div>
         <Button onClick={playSlider}>
           {isPlaying ? "pause" : "play"}
         </Button>
       </Row >
 
 
-    </Column >
+    </Wrapper >
   )
 }
 export default ZonesColors
