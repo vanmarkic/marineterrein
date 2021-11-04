@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Slider, { Range, Handle } from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -17,7 +17,7 @@ import Water from "./ZonesWithDots/water.js"
 import Fitness from './ZonesWithDots/fitness.js'
 import Gate from "./ZonesWithDots/gate.js"
 import BarChart from './BarChart';
-import MarineTerreinSvgMap from './MarineTerreinSvgMap.jsx';
+import MapMT from './map.jsx';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -136,6 +136,11 @@ const Metrics = styled.h2`
   margin:0px;
 `
 
+
+const MetricLabel = styled.h6`
+  margin:0px;
+`
+
 const Bar = styled.div`
   width: ${props => props.ratio * 100}%;
   background-color: darkblue;
@@ -181,60 +186,47 @@ const ZonesRandomPoints = () => {
   return (
 
     <Column>
-      <Row style={{ justifyContent: 'flex-end' }}>
 
+      <Row style={{ justifyContent: 'flex-end' }}>
       </Row>
 
-
-
-      <Row style={{ height: '65vh' }}>
-
+      <Row style={{ height: '65vh', backgroundColor: '#222222'}}>
         <svg width="100%" height="60vh" viewBox="1400 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
-
-          <MarineTerreinSvgMap />
-
+          <MapMT />
           <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.floor(picnicAmount)}</text>
           <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.floor(waterAmount)}</text>
           <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.floor(fitnessAmount)}</text>
           <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
         </svg>
       </Row>
 
       <Row style={{ justifyContent: "space-evenly" }}>
-
-
         <Column style={{ alignItems: 'center' }}>
-          <div>temperature</div>
+          <MetricLabel>temperature</MetricLabel>
           <Metrics>
-
             {weatherDataAverageTemp[dateIndex]}°C
           </Metrics>
         </Column>
         <Column style={{ alignItems: 'center', width: '200px' }}>
-          <div>date</div>
+          <MetricLabel>date</MetricLabel>
           <Row >
             <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(8, 11)}-</Metrics>
             <Metrics style={{ width: '40px' }}>{weatherDataDates[dateIndex].substring(5, 7)}-</Metrics>
             <Metrics>{weatherDataDates[dateIndex].substring(0, 4)}</Metrics>
           </Row>
         </Column>
-
         <Column style={{ alignItems: 'center' }} >
-          <div>visitors</div>
+          <MetricLabel>visitors</MetricLabel>
           <Metrics>
             {totalAmountOfVisitors[dateIndex]}
           </Metrics>
         </Column>
-
       </Row>
 
       <Row
       // style={{ maxWidth: '95vw' }}
       >
+
         <Column style={{
           "WebkitTouchCallout": "none",
           "WebkitUserSelect": "none",
@@ -245,13 +237,11 @@ const ZonesRandomPoints = () => {
           "WebkitTapHighlightColor": "rgba(0,0,0,0)"
         }}>
           <Row style={sliderStyle}>
-
             <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
           </Row>
           <Row style={sliderStyle}>
 
-
-            <svg height="15" width="100%">
+            <svg height="10" width="100%">
               <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                   {temperatureColors.map((color, idx) => {
