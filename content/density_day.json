@@ -1,0 +1,3018 @@
+{
+    "2020-07-07": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": 0,
+        "Terrace": "0.227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-08": {
+        "Fitness": "",
+        "Picnic": "0.0333333333333333",
+        "SwimmingArea": 0,
+        "Terrace": "0.318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-09": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": 0,
+        "Terrace": "0.227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-10": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "0,285714285714286",
+        "Terrace": "0,863636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-11": {
+        "Fitness": "",
+        "Picnic": "0,366666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-12": {
+        "Fitness": "",
+        "Picnic": "0,433333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": 0,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-13": {
+        "Fitness": "",
+        "Picnic": "1.86666666666667",
+        "SwimmingArea": "3,71428571428571",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-14": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-15": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-17": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": 2,
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-18": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "4,42857142857143",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-19": {
+        "Fitness": "",
+        "Picnic": "",
+        "SwimmingArea": "4,57142857142857",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-20": {
+        "Fitness": "",
+        "Picnic": "",
+        "SwimmingArea": 3,
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-21": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": 1,
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-22": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "0,428571428571429",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-23": {
+        "Fitness": "",
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-24": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-25": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-26": {
+        "Fitness": "",
+        "Picnic": "0,5",
+        "SwimmingArea": 3,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-27": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": 0,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-28": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-30": {
+        "Fitness": "",
+        "Picnic": "1,5",
+        "SwimmingArea": "4,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-07-31": {
+        "Fitness": "",
+        "Picnic": "5,23333333333333",
+        "SwimmingArea": "10,1428571428571",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-01": {
+        "Fitness": "",
+        "Picnic": "1,26666666666667",
+        "SwimmingArea": "3,85714285714286",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-02": {
+        "Fitness": "",
+        "Picnic": "0,933333333333333",
+        "SwimmingArea": "4,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-03": {
+        "Fitness": "",
+        "Picnic": 0,
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-04": {
+        "Fitness": "",
+        "Picnic": "0,9",
+        "SwimmingArea": 3,
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-05": {
+        "Fitness": "",
+        "Picnic": "4,36666666666667",
+        "SwimmingArea": "6,28571428571429",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-06": {
+        "Fitness": "",
+        "Picnic": "4,16666666666667",
+        "SwimmingArea": "6,42857142857143",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-07": {
+        "Fitness": "",
+        "Picnic": "3,8",
+        "SwimmingArea": "5,85714285714286",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-08": {
+        "Fitness": "",
+        "Picnic": "3,96666666666667",
+        "SwimmingArea": "5,85714285714286",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-09": {
+        "Fitness": "",
+        "Picnic": "3,83333333333333",
+        "SwimmingArea": 6,
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-10": {
+        "Fitness": "",
+        "Picnic": "4,73333333333333",
+        "SwimmingArea": "5,71428571428571",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-11": {
+        "Fitness": "",
+        "Picnic": "3,93333333333333",
+        "SwimmingArea": "4,85714285714286",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-12": {
+        "Fitness": "",
+        "Picnic": "3,8",
+        "SwimmingArea": "5,71428571428571",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-13": {
+        "Fitness": "",
+        "Picnic": "2,8",
+        "SwimmingArea": "5,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-14": {
+        "Fitness": "",
+        "Picnic": 1,
+        "SwimmingArea": "3,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2020-08-15": {
+        "Fitness": "",
+        "Picnic": 1,
+        "SwimmingArea": "4,57142857142857",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-16": {
+        "Fitness": "",
+        "Picnic": "3,3",
+        "SwimmingArea": "5,57142857142857",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2020-08-17": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2020-08-18": {
+        "Fitness": "",
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "2,85714285714286",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-19": {
+        "Fitness": "",
+        "Picnic": "0,3",
+        "SwimmingArea": "3,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-20": {
+        "Fitness": "",
+        "Picnic": "0,333333333333333",
+        "SwimmingArea": "4,57142857142857",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-21": {
+        "Fitness": 0,
+        "Picnic": "2,26666666666667",
+        "SwimmingArea": 5,
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-24": {
+        "Fitness": 2,
+        "Picnic": 0,
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-25": {
+        "Fitness": 4,
+        "Picnic": 0,
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-26": {
+        "Fitness": 7,
+        "Picnic": 0,
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-08-27": {
+        "Fitness": 2,
+        "Picnic": 0,
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": 0,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-02": {
+        "Fitness": 9,
+        "Picnic": 0,
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-03": {
+        "Fitness": 2,
+        "Picnic": 0,
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-07": {
+        "Fitness": 13,
+        "Picnic": 0,
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-08": {
+        "Fitness": 4,
+        "Picnic": 0,
+        "SwimmingArea": "2,14285714285714",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-09": {
+        "Fitness": 6,
+        "Picnic": 0,
+        "SwimmingArea": 1,
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-10": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-11": {
+        "Fitness": 6,
+        "Picnic": "0,433333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-12": {
+        "Fitness": 10,
+        "Picnic": "0,3",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-14": {
+        "Fitness": 8,
+        "Picnic": "3,6",
+        "SwimmingArea": "10,2857142857143",
+        "Terrace": "2,90909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-15": {
+        "Fitness": 9,
+        "Picnic": "3,86666666666667",
+        "SwimmingArea": "14,5714285714286",
+        "Terrace": "6,09090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-16": {
+        "Fitness": 6,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-17": {
+        "Fitness": 11,
+        "Picnic": "0,2",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-18": {
+        "Fitness": 20,
+        "Picnic": "0,3",
+        "SwimmingArea": "2,14285714285714",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-19": {
+        "Fitness": 11,
+        "Picnic": "0,9",
+        "SwimmingArea": 3,
+        "Terrace": "0,863636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-20": {
+        "Fitness": 13,
+        "Picnic": "0,9",
+        "SwimmingArea": "5,85714285714286",
+        "Terrace": "0,727272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-21": {
+        "Fitness": 8,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "4,85714285714286",
+        "Terrace": "1,54545454545454",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-22": {
+        "Fitness": 8,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "8,42857142857143",
+        "Terrace": "2,04545454545454",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-23": {
+        "Fitness": 10,
+        "Picnic": "0,2",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-24": {
+        "Fitness": 4,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2020-09-25": {
+        "Fitness": 7,
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-26": {
+        "Fitness": 5,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-27": {
+        "Fitness": 4,
+        "Picnic": "1,16666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-28": {
+        "Fitness": 3,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-29": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-09-30": {
+        "Fitness": 4,
+        "Picnic": "0,2",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-01": {
+        "Fitness": 2,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-02": {
+        "Fitness": 5,
+        "Picnic": "0,2",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-03": {
+        "Fitness": 3,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-04": {
+        "Fitness": 5,
+        "Picnic": "0,2",
+        "SwimmingArea": 2,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-05": {
+        "Fitness": 2,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-06": {
+        "Fitness": 2,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-07": {
+        "Fitness": 8,
+        "Picnic": "0,2",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-08": {
+        "Fitness": 6,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-09": {
+        "Fitness": 5,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-10": {
+        "Fitness": 12,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-11": {
+        "Fitness": 6,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-12": {
+        "Fitness": 1,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-13": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-14": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-15": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-16": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-17": {
+        "Fitness": "",
+        "Picnic": "0,3",
+        "SwimmingArea": "2,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-18": {
+        "Fitness": "",
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-19": {
+        "Fitness": "",
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-20": {
+        "Fitness": "",
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-21": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-22": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-23": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-24": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 2,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-25": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-26": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-27": {
+        "Fitness": 5,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-28": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-29": {
+        "Fitness": 5,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-30": {
+        "Fitness": 7,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-10-31": {
+        "Fitness": 6,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-01": {
+        "Fitness": 7,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-02": {
+        "Fitness": 8,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-03": {
+        "Fitness": 7,
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-04": {
+        "Fitness": 7,
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2020-11-05": {
+        "Fitness": 5,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-06": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-07": {
+        "Fitness": 6,
+        "Picnic": "",
+        "SwimmingArea": "",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-08": {
+        "Fitness": 9,
+        "Picnic": "",
+        "SwimmingArea": "",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-09": {
+        "Fitness": 7,
+        "Picnic": "",
+        "SwimmingArea": "",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-10": {
+        "Fitness": 5,
+        "Picnic": "",
+        "SwimmingArea": "",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-11": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": 0,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-12": {
+        "Fitness": 6,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-13": {
+        "Fitness": 5,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-14": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-15": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-16": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-17": {
+        "Fitness": 4,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-18": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-19": {
+        "Fitness": 0,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": 0,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-20": {
+        "Fitness": "",
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-21": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 2,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-22": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-23": {
+        "Fitness": 1,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-24": {
+        "Fitness": 8,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-25": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-26": {
+        "Fitness": 5,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-27": {
+        "Fitness": 7,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-28": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-29": {
+        "Fitness": 7,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-11-30": {
+        "Fitness": 5,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-01": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-02": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-03": {
+        "Fitness": 4,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-04": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-05": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-06": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-07": {
+        "Fitness": 5,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-08": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-09": {
+        "Fitness": 7,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-10": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-11": {
+        "Fitness": 4,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-12": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-13": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-14": {
+        "Fitness": 5,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-15": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-16": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-17": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-18": {
+        "Fitness": 0,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-19": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-20": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-21": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-22": {
+        "Fitness": 0,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-23": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-24": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-25": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-26": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-27": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,428571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-28": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-29": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-30": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2020-12-31": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-01": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "2,71428571428571",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-02": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-03": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-04": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-05": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-06": {
+        "Fitness": 1,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-07": {
+        "Fitness": 6,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-08": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-09": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-10": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-11": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-12": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-13": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-14": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-15": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-16": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-17": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-18": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-19": {
+        "Fitness": 8,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-20": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-21": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-22": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-23": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-24": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-25": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-26": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-27": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-28": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-29": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-30": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-01-31": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-01": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-02": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-03": {
+        "Fitness": "",
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-04": {
+        "Fitness": 15,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-05": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-06": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,136363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-07": {
+        "Fitness": 6,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-08": {
+        "Fitness": 8,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-09": {
+        "Fitness": 6,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-10": {
+        "Fitness": 4,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-11": {
+        "Fitness": 5,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-12": {
+        "Fitness": 3,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-13": {
+        "Fitness": 4,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-14": {
+        "Fitness": 4,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-15": {
+        "Fitness": 3,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,428571428571429",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-16": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-17": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-18": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-19": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-20": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 2,
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2021-02-21": {
+        "Fitness": 10,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "2,71428571428571",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-22": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2021-02-23": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-24": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "2,42857142857143",
+        "Terrace": "1,22727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-25": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-26": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,818181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-27": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "1,13636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-02-28": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "1,18181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-01": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-02": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-03": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,818181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-04": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-05": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,818181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-06": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,681818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-07": {
+        "Fitness": 13,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-08": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-09": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-10": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-11": {
+        "Fitness": 11,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-12": {
+        "Fitness": 8,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-13": {
+        "Fitness": 12,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-14": {
+        "Fitness": 0,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": "0,0454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-15": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-16": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-17": {
+        "Fitness": 14,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-18": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-19": {
+        "Fitness": 10,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-20": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-21": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-22": {
+        "Fitness": 14,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-23": {
+        "Fitness": 14,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-24": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-25": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-26": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-27": {
+        "Fitness": 9,
+        "Picnic": "0,0333333333333333",
+        "SwimmingArea": "0,142857142857143",
+        "Terrace": "0,0909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-28": {
+        "Fitness": 9,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-29": {
+        "Fitness": 9,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "0,863636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-30": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "5,85714285714286",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-03-31": {
+        "Fitness": 15,
+        "Picnic": "0,1",
+        "SwimmingArea": "6,57142857142857",
+        "Terrace": "1,63636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-01": {
+        "Fitness": 14,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,681818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-02": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-03": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-04": {
+        "Fitness": 9,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-05": {
+        "Fitness": 9,
+        "Picnic": "0,1",
+        "SwimmingArea": 2,
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-06": {
+        "Fitness": 9,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-07": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-08": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-09": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-10": {
+        "Fitness": 13,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-11": {
+        "Fitness": 12,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-12": {
+        "Fitness": 12,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-13": {
+        "Fitness": 14,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,681818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-14": {
+        "Fitness": 14,
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-15": {
+        "Fitness": 11,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,545454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-16": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-17": {
+        "Fitness": 12,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "1,22727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-18": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "2,14285714285714",
+        "Terrace": "0,863636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-19": {
+        "Fitness": 5,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-20": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "2,42857142857143",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-21": {
+        "Fitness": 11,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-22": {
+        "Fitness": 10,
+        "Picnic": "0,1",
+        "SwimmingArea": 1,
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-23": {
+        "Fitness": 11,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "2,09090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-24": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "1,22727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-25": {
+        "Fitness": 13,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,85714285714286",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-26": {
+        "Fitness": 12,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-27": {
+        "Fitness": 11,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "2,42857142857143",
+        "Terrace": "1,63636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-28": {
+        "Fitness": "",
+        "Picnic": "0,1",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-29": {
+        "Fitness": "",
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-04-30": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-01": {
+        "Fitness": 12,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-02": {
+        "Fitness": 11,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,681818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-03": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-04": {
+        "Fitness": 7,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-05": {
+        "Fitness": 12,
+        "Picnic": "0,1",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-06": {
+        "Fitness": 10,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-07": {
+        "Fitness": 11,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-08": {
+        "Fitness": 11,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-09": {
+        "Fitness": 12,
+        "Picnic": "0,3",
+        "SwimmingArea": "3,14285714285714",
+        "Terrace": "1,13636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-10": {
+        "Fitness": 11,
+        "Picnic": "0,1",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-11": {
+        "Fitness": 12,
+        "Picnic": "0,0666666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-12": {
+        "Fitness": 14,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "1,54545454545454",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-13": {
+        "Fitness": 12,
+        "Picnic": "1,23333333333333",
+        "SwimmingArea": "2,57142857142857",
+        "Terrace": "1,63636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-14": {
+        "Fitness": 9,
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "1,27272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-15": {
+        "Fitness": 9,
+        "Picnic": "0,2",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-16": {
+        "Fitness": 10,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,636363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-17": {
+        "Fitness": 14,
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-18": {
+        "Fitness": 11,
+        "Picnic": "0,3",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-19": {
+        "Fitness": 12,
+        "Picnic": "0,2",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-20": {
+        "Fitness": 8,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-21": {
+        "Fitness": 8,
+        "Picnic": "0,2",
+        "SwimmingArea": 1,
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-22": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-23": {
+        "Fitness": 8,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,454545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-24": {
+        "Fitness": 5,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": 1,
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-25": {
+        "Fitness": 7,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-26": {
+        "Fitness": 8,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-27": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-28": {
+        "Fitness": 6,
+        "Picnic": "0,833333333333333",
+        "SwimmingArea": "",
+        "Terrace": "2,90909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-29": {
+        "Fitness": 7,
+        "Picnic": "1,5",
+        "SwimmingArea": "",
+        "Terrace": "2,95454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-30": {
+        "Fitness": 10,
+        "Picnic": 4,
+        "SwimmingArea": "",
+        "Terrace": "1,36363636363636",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-05-31": {
+        "Fitness": 6,
+        "Picnic": "3,23333333333333",
+        "SwimmingArea": "",
+        "Terrace": "2,63636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-01": {
+        "Fitness": 10,
+        "Picnic": "4,33333333333333",
+        "SwimmingArea": "7,57142857142857",
+        "Terrace": "2,54545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-02": {
+        "Fitness": 9,
+        "Picnic": 5,
+        "SwimmingArea": "10,8571428571429",
+        "Terrace": "3,18181818181818",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-03": {
+        "Fitness": 11,
+        "Picnic": "1,86666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "1,77272727272727",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-04": {
+        "Fitness": 7,
+        "Picnic": "2,73333333333333",
+        "SwimmingArea": "",
+        "Terrace": "1,45454545454546",
+        "Hosts": true,
+        "Warning": true
+    },
+    "2021-06-05": {
+        "Fitness": 7,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-06": {
+        "Fitness": 9,
+        "Picnic": "3,8",
+        "SwimmingArea": "2,42857142857143",
+        "Terrace": "1,63636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-07": {
+        "Fitness": 8,
+        "Picnic": "1,86666666666667",
+        "SwimmingArea": "",
+        "Terrace": "1,18181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-08": {
+        "Fitness": 11,
+        "Picnic": "2,4",
+        "SwimmingArea": "",
+        "Terrace": "1,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-09": {
+        "Fitness": 7,
+        "Picnic": "3,26666666666667",
+        "SwimmingArea": "",
+        "Terrace": "1,45454545454546",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-10": {
+        "Fitness": 9,
+        "Picnic": "3,6",
+        "SwimmingArea": "",
+        "Terrace": "1,31818181818182",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-11": {
+        "Fitness": 7,
+        "Picnic": "1,73333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "1,18181818181818",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-12": {
+        "Fitness": 9,
+        "Picnic": "2,4",
+        "SwimmingArea": "5,14285714285714",
+        "Terrace": 1,
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-13": {
+        "Fitness": 8,
+        "Picnic": "4,76666666666667",
+        "SwimmingArea": "",
+        "Terrace": "1,40909090909091",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-14": {
+        "Fitness": 12,
+        "Picnic": "4,53333333333333",
+        "SwimmingArea": "",
+        "Terrace": "1,45454545454546",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-15": {
+        "Fitness": 6,
+        "Picnic": "0,4",
+        "SwimmingArea": "",
+        "Terrace": "0,363636363636364",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-16": {
+        "Fitness": 11,
+        "Picnic": "5,8",
+        "SwimmingArea": "",
+        "Terrace": "1,81818181818182",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-17": {
+        "Fitness": 14,
+        "Picnic": "3,1",
+        "SwimmingArea": "",
+        "Terrace": "0,954545454545455",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-18": {
+        "Fitness": 5,
+        "Picnic": "0,533333333333333",
+        "SwimmingArea": "",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2021-06-19": {
+        "Fitness": 8,
+        "Picnic": "0,433333333333333",
+        "SwimmingArea": "",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-20": {
+        "Fitness": 6,
+        "Picnic": "0,466666666666667",
+        "SwimmingArea": "",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2021-06-21": {
+        "Fitness": 6,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-22": {
+        "Fitness": 9,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-23": {
+        "Fitness": 8,
+        "Picnic": "0,366666666666667",
+        "SwimmingArea": "",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-24": {
+        "Fitness": 5,
+        "Picnic": "0,4",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,818181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-25": {
+        "Fitness": 9,
+        "Picnic": "0,3",
+        "SwimmingArea": "1,42857142857143",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-26": {
+        "Fitness": 7,
+        "Picnic": "0,7",
+        "SwimmingArea": "3,14285714285714",
+        "Terrace": "0,727272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-27": {
+        "Fitness": 6,
+        "Picnic": "3,33333333333333",
+        "SwimmingArea": "7,14285714285714",
+        "Terrace": "0,863636363636364",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-06-28": {
+        "Fitness": 7,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-29": {
+        "Fitness": 7,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,285714285714286",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-06-30": {
+        "Fitness": 5,
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "0,428571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-01": {
+        "Fitness": 6,
+        "Picnic": "0,4",
+        "SwimmingArea": 1,
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-02": {
+        "Fitness": 7,
+        "Picnic": "0,3",
+        "SwimmingArea": 2,
+        "Terrace": "0,909090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-03": {
+        "Fitness": 7,
+        "Picnic": "0,3",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,363636363636364",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-04": {
+        "Fitness": 7,
+        "Picnic": "0,333333333333333",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,5",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-05": {
+        "Fitness": 9,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-06": {
+        "Fitness": 8,
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "0,714285714285714",
+        "Terrace": "0,227272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-07": {
+        "Fitness": 7,
+        "Picnic": "0,333333333333333",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-08": {
+        "Fitness": 8,
+        "Picnic": "0,3",
+        "SwimmingArea": "2,85714285714286",
+        "Terrace": "1,22727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-09": {
+        "Fitness": 11,
+        "Picnic": "0,866666666666667",
+        "SwimmingArea": "2,85714285714286",
+        "Terrace": "0,727272727272727",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-10": {
+        "Fitness": 7,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "0,681818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-11": {
+        "Fitness": 7,
+        "Picnic": "0,266666666666667",
+        "SwimmingArea": "2,57142857142857",
+        "Terrace": "0,772727272727273",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-12": {
+        "Fitness": 10,
+        "Picnic": "0,2",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-13": {
+        "Fitness": 8,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": 1,
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-14": {
+        "Fitness": 8,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "1,28571428571429",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-15": {
+        "Fitness": 6,
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,857142857142857",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-16": {
+        "Fitness": 5,
+        "Picnic": "0,966666666666667",
+        "SwimmingArea": "3,85714285714286",
+        "Terrace": "0,954545454545455",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-17": {
+        "Fitness": 7,
+        "Picnic": "5,16666666666667",
+        "SwimmingArea": "8,71428571428572",
+        "Terrace": "1,09090909090909",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-18": {
+        "Fitness": 6,
+        "Picnic": "5,9",
+        "SwimmingArea": "11,2857142857143",
+        "Terrace": "1,22727272727273",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-19": {
+        "Fitness": 7,
+        "Picnic": "0,966666666666667",
+        "SwimmingArea": "2,28571428571429",
+        "Terrace": "0,636363636363636",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-20": {
+        "Fitness": 9,
+        "Picnic": "2,43333333333333",
+        "SwimmingArea": 7,
+        "Terrace": "0,954545454545455",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-21": {
+        "Fitness": 8,
+        "Picnic": "3,43333333333333",
+        "SwimmingArea": "8,14285714285714",
+        "Terrace": "0,954545454545455",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-22": {
+        "Fitness": 8,
+        "Picnic": "1,9",
+        "SwimmingArea": "5,42857142857143",
+        "Terrace": "1,09090909090909",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-23": {
+        "Fitness": 6,
+        "Picnic": "0,5",
+        "SwimmingArea": "3,71428571428571",
+        "Terrace": "1,09090909090909",
+        "Hosts": true,
+        "Warning": ""
+    },
+    "2021-07-24": {
+        "Fitness": 7,
+        "Picnic": "0,333333333333333",
+        "SwimmingArea": "1,71428571428571",
+        "Terrace": "1,09090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-25": {
+        "Fitness": 7,
+        "Picnic": "0,333333333333333",
+        "SwimmingArea": "4,28571428571429",
+        "Terrace": "0,590909090909091",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-26": {
+        "Fitness": "",
+        "Picnic": "0,2",
+        "SwimmingArea": "1,57142857142857",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": true
+    },
+    "2021-07-27": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,181818181818182",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-28": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,571428571428571",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-29": {
+        "Fitness": "",
+        "Picnic": "0,233333333333333",
+        "SwimmingArea": "1,14285714285714",
+        "Terrace": "0,409090909090909",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-30": {
+        "Fitness": "",
+        "Picnic": "0,166666666666667",
+        "SwimmingArea": "0,285714285714286",
+        "Terrace": "0,318181818181818",
+        "Hosts": "",
+        "Warning": ""
+    },
+    "2021-07-31": {
+        "Fitness": "",
+        "Picnic": "0,133333333333333",
+        "SwimmingArea": "0,428571428571429",
+        "Terrace": "0,272727272727273",
+        "Hosts": "",
+        "Warning": ""
+    }
+}

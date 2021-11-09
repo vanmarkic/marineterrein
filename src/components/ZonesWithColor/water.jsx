@@ -1,10 +1,5 @@
 import React from "react"
-
-const style = {
-  fillRule: "nonzero",
-  stroke: "#000",
-  strokeWidth: "8px",
-}
+import style from './styles'
 
 const Water = ({ fillColor}) => (
 

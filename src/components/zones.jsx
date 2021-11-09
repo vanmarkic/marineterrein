@@ -3,7 +3,6 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 import styled from "styled-components"
-import GlobalStyle from "../styles/globalStyle"
 
 import * as d3Array from 'd3-array'
 
@@ -11,10 +10,10 @@ import * as d3Array from 'd3-array'
 import { schemeBlues as scheme, interpolateBlues } from 'd3-scale-chromatic'
 
 
-import Picnic from "./ZonesWithColor/picnic.js"
-import Water from "./ZonesWithColor/water.js"
-import Fitness from './ZonesWithColor/fitness.js'
-import Gate from "./ZonesWithColor/gate.js"
+import Picnic from "./ZonesWithColor/picnic"
+import Water from "./ZonesWithColor/water"
+import Fitness from './ZonesWithColor/fitness'
+import Gate from "./ZonesWithColor/gate"
 
 import data from "../../content/oneyearfourcamsbyday.json"
 
