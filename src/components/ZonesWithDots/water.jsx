@@ -7,7 +7,7 @@ import style from './styles'
 
 
 const Water = ({ amount }) => {
-  const polygonPoints = "M1186.34 1241.12l82.8-32.4 63.6 162 135.6-64.8 93.6 132-66 58.8-4.8-6-51.6-73.2-153.6 74.4-99.6-250.8"
+  const polygonPoints = "M142.85,546.85l41.4,-16.2l31.8,81l67.8,-32.4l46.8,66l-33,29.4l-2.4,-3l-25.8,-36.6l-76.8,37.2l-49.8,-125.4"
   const [randomPoints, setRandomPoints] = useState([])
 
   useEffect(() => {

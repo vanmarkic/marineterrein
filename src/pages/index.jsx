@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import ZonesColors from '../components/zonesColors'
+// import ZonesColors from '../components/zonesColors'
 import ZonesRandomPoints from '../components/zonesRandomPoints'
 
 import "../styles/index.css"

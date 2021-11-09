@@ -89,7 +89,7 @@ const BarChart = ({ width, height, data }) => {
 
     svg.append("path")
       .attr("fill", "transparent")
-      .attr("stroke", "black")
+      .attr("stroke", "#f2f2f2")
       .attr("stroke-width", "3")
       .attr("d", area(I));
 
