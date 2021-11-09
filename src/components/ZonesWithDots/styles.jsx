@@ -1,16 +1,14 @@
 const style = {
 
     zones: {
-        fillRule: "evenodd",
+        fillRule: "nonzero",
         stroke: "lightGrey",
-        strokeWidth: "0px",
-        fill: 'transparent'
+        strokeWidth: "10px",
+        fill: 'WHITE'
     },
     dots: {
         radius: 5,
-        fill: {
-            picnic: "yellow",
-        }
+        fill: 'darkblue'
     }
 
 

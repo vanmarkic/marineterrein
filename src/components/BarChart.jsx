@@ -83,14 +83,12 @@ const BarChart = ({ width, height, data }) => {
       .call(g => g.append("text")
         .attr("x", -marginLeft)
         .attr("y", 10)
-        .attr("fill", "none")
+        .attr("fill", "currentColor")
         .attr("text-anchor", "start")
         .text(yLabel));
 
     svg.append("path")
-      .attr("fill", "transparent")
-      .attr("stroke", "black")
-      .attr("stroke-width", "3")
+      .attr("fill", color)
       .attr("d", area(I));
 
     svg.append("g")

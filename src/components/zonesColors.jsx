@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 
 import Slider, { Range, Handle, SliderTooltip } from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -17,7 +17,7 @@ import Water from "./ZonesWithColor/water"
 import Fitness from './ZonesWithColor/fitness'
 import Gate from "./ZonesWithColor/gate"
 import BarChart from './BarChart';
-import { newFunction } from './newFunction';
+import MarineTerreinSvgMap from './MarineTerreinSvgMap.jsx';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -234,15 +234,17 @@ const ZonesColors = () => {
       <Row style={{ height: '65vh' }}>
 
         <svg width="100%" height="60vh" viewBox="1400 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
-          {newFunction()}
-          <Picnic fillColor={thresholdScale(picnicDensity)} amount={picnicDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{picnicDensity}</text>
-          <Water fillColor={thresholdScale(waterDensity)} amount={waterDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{waterDensity}</text>
-          <Fitness fillColor={thresholdScale(fitnessDensity)} amount={fitnessDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{fitnessDensity}</text>
-          <Gate fillColor={thresholdScale(gateDensity)} amount={gateDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{gateDensity}</text>
+
+          <MarineTerreinSvgMap />
+
+          <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.floor(picnicAmount)}</text>
+          <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.floor(waterAmount)}</text>
+          <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.floor(fitnessAmount)}</text>
+          <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
+          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
         </svg>
 
       </Row>
