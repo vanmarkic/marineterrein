@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import Slider, { Range, Handle } from 'rc-slider';
+import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
-import { schemeBlues as scheme, interpolateBlues } from 'd3-scale-chromatic'
 import { scaleLinear } from 'd3-scale'
 
 import camData from "../../content/oneyearfourcamsbyday.json"
@@ -50,12 +49,6 @@ const sliderStyle = {
   marginTop: 'auto', marginBottom: 'auto'
 };
 
-const getRatio = (key, amount) => amount / extents[key].range
-
-const getColor = (key, amount) => {
-  const ratio = getRatio(key, amount)
-  return interpolateBlues(ratio)
-}
 
 const tempColors = scaleLinear()
   .domain([extents.temperature.min, 10, extents.temperature.max])
@@ -107,29 +100,7 @@ const Column = styled.div`
         display: flex;
         max-height: 95vh;
         flex-direction: column;
-       
-
 `
-const AmountsContainer = styled.div`
-        max-width: 250px;
-        min-width: 250px;
-`
-
-const Thermometer = styled.div`
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        font-size: 1em;
-        font-weight: 700;
-        margin:15px;
-        background: rgb(11,11,11);
-        background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
-`
-
 
 const Metrics = styled.h2`
   margin:0px;
@@ -139,20 +110,6 @@ const Metrics = styled.h2`
 const MetricLabel = styled.h6`
   margin:0px;
 `
-
-const Bar = styled.div`
-  width: ${props => props.ratio * 100}%;
-  background-color: darkblue;
-  height: 20px;
-
-`
-const VerticalNeedle = styled.div`
-  display: block;
-  width:1px;
-  height: 150px;
-  background-color: black;
-`
-
 
 const ZonesRandomPoints = () => {
 
@@ -180,8 +137,6 @@ const ZonesRandomPoints = () => {
     setIsPlaying(true)
   }
 
-
-
   return (
 
     <Column>
@@ -189,13 +144,13 @@ const ZonesRandomPoints = () => {
       <Row style={{ justifyContent: 'flex-end' }}>
       </Row>
 
-      <Row style={{ height: '65vh'}}>
-        <svg width="100%" height="60vh" viewBox="0 0 1000 1000" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative", margin: "auto"}}>
+      <Row style={{ height: '65vh' }}>
+        <svg width="100%" height="60vh" viewBox="0 0 1000 1000" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative", margin: "auto" }}>
           <MapMT />
-          <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
-          <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
-          <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
-          <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
+          <Picnic amount={picnicAmount} />
+          <Water amount={waterAmount} />
+          <Fitness amount={fitnessAmount} />
+          <Gate amount={gateAmount} />
         </svg>
       </Row>
 
@@ -222,9 +177,7 @@ const ZonesRandomPoints = () => {
         </Column>
       </Row>
 
-      <Row
-      // style={{ maxWidth: '95vw' }}
-      >
+      <Row>
 
         <Column style={{
           "WebkitTouchCallout": "none",
