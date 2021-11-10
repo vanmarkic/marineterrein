@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Slider from 'rc-slider';
+import Slider, { Handle } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
@@ -99,6 +99,7 @@ const Row = styled.div`
 const Column = styled.div`
         display: flex;
         max-height: 95vh;
+        height: 15vh;
         flex-direction: column;
 `
 
@@ -109,6 +110,15 @@ const Metrics = styled.h2`
 
 const MetricLabel = styled.h6`
   margin:0px;
+`
+
+const VerticalNeedle = styled.div`
+  display: block;
+  width:1px;
+  height: 15vh;
+ margin: auto;
+ margin-top: -15vh;
+  background-color:white;
 `
 
 const ZonesRandomPoints = () => {
@@ -125,6 +135,18 @@ const ZonesRandomPoints = () => {
   useEffect(() => {
     if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
   }, [dateIndex, intervalId]);
+
+
+  const handle = props => {
+    const { value, dragging, index, ...restProps } = props;
+    return (
+
+      <Handle value={value} {...restProps} >
+        <VerticalNeedle />
+      </Handle>
+
+    );
+  };
 
   const playSlider = () => {
     if (isPlaying && intervalId) {
@@ -189,7 +211,7 @@ const ZonesRandomPoints = () => {
           "WebkitTapHighlightColor": "rgba(0,0,0,0)"
         }}>
           <Row style={sliderStyle}>
-            <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
+            <BarChart data={totalAmountOfVisitors} dateIndex={dateIndex} height="200" width="4000" />
           </Row>
           <Row style={sliderStyle}>
 
@@ -220,13 +242,14 @@ const ZonesRandomPoints = () => {
                 marginTop: -13,
                 backgroundColor: 'black',
               }}
+              handle={handle}
             />
 
           </Row>
 
         </Column>
         <Button onClick={playSlider}>
-          {isPlaying ? "pause" : "play"}
+          {isPlaying ? '⏸' : "▶"}
         </Button>
       </Row >
 
