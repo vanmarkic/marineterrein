@@ -4,34 +4,29 @@ import Slider, { Handle } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
+
 import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
 import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
 
-=======
+
 import { scaleLinear } from 'd3-scale'
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
+
 
 import camData from "../../content/oneyearfourcamsbyday.json"
 import densityPeakPerDay from "../../content/density_day.json"
 
 import weatherData from "../../content/schiphol_weather.json"
 
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-import Picnic from "./ZonesWithColor/picnic"
-import Water from "./ZonesWithColor/water"
-import Fitness from './ZonesWithColor/fitness'
-import Gate from "./ZonesWithColor/gate"
-import BarChart from './BarChart';
-import { newFunction } from './newFunction';
-=======
+
+
+
 import Picnic from "./Map/ZonesWithDots/picnic"
 import Water from "./Map/ZonesWithDots/water"
 import Fitness from './Map/ZonesWithDots/fitness'
 import Gate from "./Map/ZonesWithDots/gate"
 import BarChart from './BarChart';
 import MtMap from './Map/map';
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
+
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -87,19 +82,7 @@ const sliderStyle = {
   marginTop: 'auto', marginBottom: 'auto'
 };
 
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-const getRatio = (key, amount) => amount / extents[key].range
 
-const getColor = (key, amount) => {
-  // const ratio = getRatio(key, amount)
-  // return interpolateYlOrRd(ratio)
-  // TODO create 4 discrete values/colors based on differents densities
-  // ["#ffffb2","#fecc5c","#fd8d3c","#e31a1c"]
-
-  return thresholdScale()
-}
-=======
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
 
 const tempColors = scaleLinear()
   .domain([extents.temperature.min, 10, extents.temperature.max])
@@ -151,24 +134,6 @@ const Column = styled.div`
         display: flex;
         max-height: 95vh;
         height: 15vh;
-        flex-direction: column;
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-`
-
-const FirstPart = styled.div`
-     display: flex;
-        max-height: 95vh;
-        flex-direction: row;
-
-
-`
-
-
-const AmountsContainer = styled.div`
-        max-width: 250px;
-        min-width: 250px;
-=======
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
 `
 
 const Metrics = styled.h2`
@@ -182,22 +147,17 @@ const MetricLabel = styled.h6`
 
 const VerticalNeedle = styled.div`
   display: block;
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
+
   width: ·1px;
   height: 150px;
   background-color: black;
-`
 
-
-=======
   width:1px;
   height: 15vh;
  margin: auto;
  margin-top: -15vh;
-  background-color:white;
-`
+  background-color:white;`
 
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
 const ZonesRandomPoints = () => {
 
   const [dateIndex, setDateIndex] = useState(0);
@@ -249,29 +209,12 @@ const ZonesRandomPoints = () => {
       </Row>
 
       <Row style={{ height: '65vh' }}>
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-
-        <svg width="100%" height="60vh" viewBox="1400 0 2160 2160" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
-
-          {newFunction()}
-
-          <Picnic fillColor={getColor("picnic", picnicAmount)} amount={picnicAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{Math.floor(picnicAmount)}</text>
-          <Water fillColor={getColor("water", waterAmount)} amount={waterAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{Math.floor(waterAmount)}</text>
-          <Fitness fillColor={getColor("fitness", fitnessAmount)} amount={fitnessAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{Math.floor(fitnessAmount)}</text>
-          <Gate fillColor={getColor("gate", gateAmount)} amount={gateAmount} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{Math.floor(gateAmount)}</text>
-        </svg>
-=======
         <MtMap>
           <Picnic amount={picnicAmount} />
           <Water amount={waterAmount} />
           <Fitness amount={fitnessAmount} />
           <Gate amount={gateAmount} />
         </MtMap>
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
       </Row>
 
       <Row style={{ justifyContent: "space-evenly" }}>
@@ -297,17 +240,6 @@ const ZonesRandomPoints = () => {
         </Column>
       </Row>
 
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-      <Row
-      // style={{ maxWidth: '95vw' }}
-      >
-        <Column style={{
-          "WebkitTouchCallout": "none",
-          "WebkitUserSelect": "none",
-          "khtmlUserSelect": "none",
-          "mozUserSelect": "none",
-          "msUserSelect": "none",
-=======
       <Row>
 
         <Column style={{
@@ -316,7 +248,6 @@ const ZonesRandomPoints = () => {
           "KhtmlUserSelect": "none",
           "MozUserSelect": "none",
           "MsUserSelect": "none",
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
           "UserSelect": "none",
           "WebkitTapHighlightColor": "rgba(0,0,0,0)"
         }}>
@@ -369,8 +300,3 @@ const ZonesRandomPoints = () => {
 }
 export default ZonesRandomPoints
 
-
-<<<<<<< HEAD:src/components/zonesRandomPoints.jsx
-=======
-
->>>>>>> darkPoints:src/components/zonesRandomPointsV2.jsx
