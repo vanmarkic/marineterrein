@@ -20,7 +20,7 @@ const Fitness = ({ amount }) => {
   return (
     <g>
       <path id="fitnesstuin" fill="white" d={polygonPoints} style={style.zones} />
-      {randomPoints && randomPoints.map((point,index) => (<circle key={index} fill={"lightBlue"} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
+      {randomPoints && randomPoints.map((point,index) => (<circle key={index} fill={"white"} cx={point[0]} cy={point[1]} r={style.dots.radius}  />))}
     </g>
 
   );

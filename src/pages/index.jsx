@@ -4,6 +4,7 @@ import breakpoint from '../styles/globalStyle'
 
 import ZonesColors from '../components/zonesColors'
 // import ZonesRandomPoints from '../components/zonesRandomPoints'
+import ZonesRandomPoints from '../components/zonesRandomPointsV2'
 
 import "../styles/index.css"
 

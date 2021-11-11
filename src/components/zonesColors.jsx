@@ -8,10 +8,10 @@ import * as d3Array from 'd3-array'
 import { scaleLinear, scaleQuantile, scaleThreshold } from 'd3-scale'
 
 
-import XS from "../images/0-10.png"
-import S from "../images/10-20.png"
-import M from "../images/20-30.png"
-import L from "../images/30-40.png"
+// import XS from "../images/0-10.png"
+// import S from "../images/10-20.png"
+// import M from "../images/20-30.png"
+// import L from "../images/30-40.png"
 
 import breakpoint from '../styles/globalStyle'
 
@@ -20,12 +20,14 @@ import densityPeakPerDay from "../../content/density_day.json"
 
 import weatherData from "../../content/schiphol_weather.json"
 
-import Picnic from "./ZonesWithColor/picnic"
-import Water from "./ZonesWithColor/water"
-import Fitness from './ZonesWithColor/fitness'
-import Gate from "./ZonesWithColor/gate"
+
+import Picnic from "./Map/ZonesWithDots/picnic"
+import Water from "./Map/ZonesWithDots/water"
+import Fitness from './Map/ZonesWithDots/fitness'
+import Gate from "./Map/ZonesWithDots/gate"
 import BarChart from './BarChart';
-import { newFunction } from './newFunction';
+import MtMap from './Map/map';
+
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -142,17 +144,15 @@ const Wrapper = styled.div`
         display: flex;
 
         flex-direction: column;
-align-items: center;
-
-
+    align-items: center;
 
    display: flex;
     flex-direction:column;
     @media only screen and ${breakpoint.device.xs}{
       height:95vh;
-justify-content: space-between;
-width:90vw;
-margin:auto;
+      justify-content: space-between;
+      width:90vw;
+      margin:auto;
 
     }
     @media only screen and ${breakpoint.device.sm}{
@@ -193,13 +193,13 @@ const LegendWrapper = styled.div`
     }
     @media only screen and ${breakpoint.device.sm}{
         flex-direction: column;
-margin: 50px 0px;
+        margin: 50px 10px;
 
     }
     @media only screen and ${breakpoint.device.lg}{
 
         flex-direction:column;
-        margin: 50px 0px;
+        margin:20px 0px;
     }
 `;
 const Legend = styled.div`
@@ -209,6 +209,7 @@ const Legend = styled.div`
     @media only screen and ${breakpoint.device.xs}{
         flex-direction: column;
         align-items: center;
+margin: 0px 10px;
     }
     @media only screen and ${breakpoint.device.sm}{
         flex-direction: row;
@@ -259,10 +260,23 @@ const Bar = styled.div`
 `
 const VerticalNeedle = styled.div`
   display: block;
-  width: ·1px;
-  height: 150px;
-  background-color: black;
+  width:1px;
+  height: 10vh;
+ margin: auto;
+ margin-top: -10vh;
+  background-color:white;
 `
+
+const handle = props => {
+  const { value, dragging, index, ...restProps } = props;
+  return (
+
+    <Handle value={value} {...restProps} >
+      <VerticalNeedle />
+    </Handle>
+
+  );
+};
 
 // const DensityLabel = ({ label, color, picture }) => (
 //     <Picture file={picture} />
@@ -272,6 +286,24 @@ const DensityLabel = styled.div(({ label, color, picture }) => `
     min-width: 400px;  
     background-image: url("../images/${picture}.png");
 `)
+
+
+
+const TempStrip = () => {
+  return (<svg height="10" width="100%">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        {temperatureColors.map((color, idx) => {
+          return <stop key={idx} offset={idx / (temperatureColors.length - 1)} style={{
+            "stopColor": color,
+            "stopOpacity": 1
+          }} />;
+        })}
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="15" fill="url('#grad1')" />
+  </svg>);
+}
 
 
 const ZonesColors = () => {
@@ -288,25 +320,27 @@ const ZonesColors = () => {
   let picnicDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
     densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'] != ''
     ?
-    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'])
-    : 'no measure'
+    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'])) * 3
+    : undefined
+
   let waterDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
     densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'] != ''
     ?
-    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'])
-    : 'no measure'
+    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'])) * 3
+    : undefined
   let fitnessDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
     densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'] != ''
     ?
-    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'])
-    : 'no measure'
+    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'])) * 3
+    : undefined
   let gateDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
     densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'] != ''
     ?
-    parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'])
-    : 'no measure'
+    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'])) * 3
+    : undefined
 
   useEffect(() => {
+    console.log(picnicDensity)
     if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
   }, [dateIndex]);
 
@@ -333,47 +367,49 @@ const ZonesColors = () => {
 
 
       <TopComponent>
-
-        <svg width="100%" height="55vh" viewBox="1500 100 2000 1900" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative" }}>
-          {newFunction()}
-          <Picnic fillColor={thresholdScale(picnicDensity)} amount={picnicDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2330" y="1500">{picnicDensity}</text>
-          <Water fillColor={thresholdScale(waterDensity)} amount={waterDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1700" y="1200">{waterDensity}</text>
-          <Fitness fillColor={thresholdScale(fitnessDensity)} amount={fitnessDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="1800" y="400">{fitnessDensity}</text>
-          <Gate fillColor={thresholdScale(gateDensity)} amount={gateDensity} />
-          <text fontSize="30px" fontFamily="Arial, Helvetica, sans-serif" x="2300" y="1000">{gateDensity}</text>
-        </svg>
         <LegendWrapper>
+          <Legend>
 
-          <Legend>
-            <img src={XS} width="100"></img>
-            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[1] }} ></div>
-            <div>0 - 1O</div>
           </Legend>
           <Legend>
-            <img src={S} width="100"></img>
-            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[2] }} ></div>
-            <div>1O - 20</div>
+
           </Legend>
           <Legend>
-            <img src={M} width="100"></img>
-            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[3] }} ></div>
-            <div>20 - 30</div>
+
           </Legend>
           <Legend>
-            <img src={L} width="100"></img>
-            <div style={{ width: "75px", height: "15px", backgroundColor: densityColors[4] }} ></div>
-            <div>30 - 40</div>
+
           </Legend>
 
+        </LegendWrapper>
+        <Row style={{ height: '65vh' }}>
+          <MtMap>
+            <Picnic amount={picnicDensity} />
+            <Water amount={waterDensity} />
+            <Fitness amount={fitnessDensity} />
+            <Gate amount={gateDensity} />
+          </MtMap>
+        </Row>
+        <LegendWrapper>
+          <Legend style={{ color: 'lightblue' }}>
+            Water
+          </Legend>
+          <Legend style={{ color: 'red' }}>
+            Gate
+          </Legend>
+          <Legend style={{ color: 'white' }}>
+            Fitnesstuin
+          </Legend>
+          <Legend style={{ color: 'yellow' }}>
+            Picnic
+          </Legend>
 
         </LegendWrapper>
 
+
       </TopComponent>
 
-      <Row style={{ justifyContent: "space-evenly",width: "100%" }}>
+      <Row style={{ justifyContent: "space-evenly", width: "100%" }}>
 
 
         <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
@@ -419,22 +455,22 @@ const ZonesColors = () => {
             <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
           </Row>
           <Row style={sliderStyle}>
-
-
-            <svg height="15" width="100%">
-              <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  {temperatureColors.map((color, idx) => {
-                    return (<stop key={idx} offset={idx / (temperatureColors.length - 1)} style={{ "stopColor": color, "stopOpacity": 1 }} />)
-                  })}
-                </linearGradient>
-              </defs>
-              <rect width="100%" height="15" fill="url('#grad1')" />
-            </svg>
+            <TempStrip />
           </Row>
+          {/* <Row style={{ width: '100%', justifyContent: 'space-around' , marginLeft: '1.4%'}}>
+            <VerticalNeedle />
+            <VerticalNeedle />
+            <VerticalNeedle />
+            <VerticalNeedle />
+          </Row> */}
           <Row style={{ ...sliderStyle, marginTop: "30px" }}>
             <Slider
-              marks={{ 20: 'test', 40: 'it works' }}
+              marks={{
+                330: 'Een nieuwe stadswijk',
+                210: 'Drukte in de Fitnesstuin',
+                69: 'Crowd control',
+                150: 'Van wie zijn de data? '
+              }}
               min={0}
               max={weatherDataDates.length - 1}
               included={false}
@@ -450,6 +486,7 @@ const ZonesColors = () => {
                 backgroundColor: 'black',
               }}
               dotStyle={{ backgroundColor: 'black' }}
+              handle={handle}
             />
 
           </Row>

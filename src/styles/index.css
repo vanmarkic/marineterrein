@@ -3,6 +3,8 @@ html {
     font-family: "Overpass", sans-serif;
     display: inline !important;
     margin: auto !important;
+    background-color: #222222;
+    color: #f2f2f2;
 }
 
 .row {

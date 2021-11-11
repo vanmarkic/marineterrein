@@ -2,9 +2,14 @@
 import * as d3 from 'd3';
 import React, { useRef, useEffect } from 'react';
 
-const BarChart = ({ width, height, data }) => {
+const BarChart = ({ width, height, data, dateIndex }) => {
   const ref = useRef();
+  const circleRef = useRef();
 
+  const marginTop = 0 // top margin, in pixels
+  const marginRight = 0 // right margin, in pixels
+  const marginBottom = 0 // bottom margin, in pixels
+  const marginLeft = 0  // left margin, in pixels
 
   useEffect(() => {
 
@@ -12,24 +17,54 @@ const BarChart = ({ width, height, data }) => {
       x: (d, idx) => idx,
       y: d => d,
       yLabel: "Total Visitors",
-      width,
-      height: 150,
       color: "steelblue"
     })
 
   }, [data, width]);
 
+
+  // useEffect(() => {
+
+  //   generateCursor(dateIndex, data)
+
+
+  // }, [dateIndex, data]);
+
+
+  // const generateCursor = (index, data, {
+  //   x = ([x]) => x, // given d in data, returns the (temporal) x-value
+  //   y = ([, y]) => y, // given d in data, returns the (quantitative) y-value
+  //   defined, // given d in data, returns true if defined (for gaps)
+  //   curve = d3.curveLinear, // method of interpolation between points
+  //   xType = d3.scaleUtc, // type of x-scale
+  //   xDomain, // [xmin, xmax]
+  //   xRange = [marginLeft, width - marginRight], // [left, right]
+  //   yType = d3.scaleLinear, // type of y-scale
+  // } = {}) => {
+
+  //   const group = d3.select(circleRef.current)
+  //     .attr("width", width)
+  //     .attr("height", height)
+  //     .attr("viewBox", [0, 0, width, height])
+  //     .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+
+
+  //   group.append("circle")
+  //     .attr("r", 8)
+  //     .style("fill", "white")
+  //     .style("opacity", "1");
+
+
+
+  // }
+
+
+
   function AreaChart(data, {
     x = ([x]) => x, // given d in data, returns the (temporal) x-value
     y = ([, y]) => y, // given d in data, returns the (quantitative) y-value
     defined, // given d in data, returns true if defined (for gaps)
-    curve = d3.curveLinear, // method of interpolation between points
-    marginTop = 0, // top margin, in pixels
-    marginRight = 0, // right margin, in pixels
-    marginBottom = 0, // bottom margin, in pixels
-    marginLeft = 0, // left margin, in pixels
-    width = 640, // outer width, in pixels
-    height = 200, // outer height, in pixels
+    curve = d3.curveBasis, // method of interpolation between points
     xType = d3.scaleUtc, // type of x-scale
     xDomain, // [xmin, xmax]
     xRange = [marginLeft, width - marginRight], // [left, right]
@@ -38,7 +73,6 @@ const BarChart = ({ width, height, data }) => {
     yRange = [height - marginBottom, marginTop], // [bottom, top]
     yFormat, // a format specifier string for the y-axis
     yLabel, // a label for the y-axis
-    color = "currentColor" // fill color of area
   } = {}) {
     // Compute values.
     const X = d3.map(data, x);
@@ -60,12 +94,18 @@ const BarChart = ({ width, height, data }) => {
     const yAxis = d3.axisLeft(yScale).ticks(height / 40, yFormat);
 
     // Construct an area generator.
-    const area = d3.area()
+    // const area = d3.area()
+    //   .defined(i => D[i])
+    //   .curve(curve)
+    //   .x(i => xScale(X[i]))
+    //   .y0(yScale(0))
+    //   .y1(i => yScale(Y[i]));
+
+    const Line = d3.line()
       .defined(i => D[i])
       .curve(curve)
       .x(i => xScale(X[i]))
-      .y0(yScale(0))
-      .y1(i => yScale(Y[i]));
+      .y(i => yScale(Y[i]))
 
     const svg = d3.select(ref.current)
       .attr("width", width)
@@ -83,13 +123,15 @@ const BarChart = ({ width, height, data }) => {
       .call(g => g.append("text")
         .attr("x", -marginLeft)
         .attr("y", 10)
-        .attr("fill", "currentColor")
+        .attr("fill", "none")
         .attr("text-anchor", "start")
         .text(yLabel));
 
     svg.append("path")
-      .attr("fill", color)
-      .attr("d", area(I));
+      .attr("fill", "transparent")
+      .attr("stroke", "#f2f2f2")
+      .attr("stroke-width", "3")
+      .attr("d", Line(I));
 
     svg.append("g")
       .attr("transform", `translate(0,${height - marginBottom})`)
@@ -101,6 +143,9 @@ const BarChart = ({ width, height, data }) => {
   return (
     <div className="chart">
       <svg ref={ref}>
+        <g ref={circleRef}>
+        </g>
+
       </svg>
     </div>
 
