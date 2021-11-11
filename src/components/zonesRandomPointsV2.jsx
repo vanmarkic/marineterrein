@@ -16,7 +16,7 @@ import Water from "./Map/ZonesWithDots/water"
 import Fitness from './Map/ZonesWithDots/fitness'
 import Gate from "./Map/ZonesWithDots/gate"
 import BarChart from './BarChart';
-import MtMap from './Map/map';
+import MtMap from './Map/Map';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
