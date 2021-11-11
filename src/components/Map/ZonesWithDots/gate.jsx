@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import generateRandomPoints from '../../utils/generateRandomPoints'
+import generateRandomPoints from '../../../utils/generateRandomPoints'
 import style from './styles'
 
 const Gate = ({ amount }) => {

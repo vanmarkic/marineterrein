@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo, memo } from "react"
 
-import generateRandomPoints from '../../utils/generateRandomPoints'
+import generateRandomPoints from '../../../utils/generateRandomPoints'
 
 
 import style from './styles'

@@ -10,12 +10,12 @@ import camData from "../../content/oneyearfourcamsbyday.json"
 
 import weatherData from "../../content/schiphol_weather.json"
 
-import Picnic from "./ZonesWithDots/picnic"
-import Water from "./ZonesWithDots/water"
-import Fitness from './ZonesWithDots/fitness'
-import Gate from "./ZonesWithDots/gate"
+import Picnic from "./Map/ZonesWithDots/picnic"
+import Water from "./Map/ZonesWithDots/water"
+import Fitness from './Map/ZonesWithDots/fitness'
+import Gate from "./Map/ZonesWithDots/gate"
 import BarChart from './BarChart';
-import MapMT from './map.jsx';
+import MtMap from './Map/map';
 
 const weatherDataDates = weatherData.map(el => el.date.substring(0, 10))
 const weatherDataAverageTemp = weatherData.map(el => el.TG / 10)
@@ -167,13 +167,12 @@ const ZonesRandomPoints = () => {
       </Row>
 
       <Row style={{ height: '65vh' }}>
-        <svg width="100%" height="60vh" viewBox="0 0 1000 1000" version={1.1} xmlns="http://www.w3.org/2000/svg" style={{ position: "relative", margin: "auto" }}>
-          <MapMT />
+        <MtMap>
           <Picnic amount={picnicAmount} />
           <Water amount={waterAmount} />
           <Fitness amount={fitnessAmount} />
           <Gate amount={gateAmount} />
-        </svg>
+        </MtMap>
       </Row>
 
       <Row style={{ justifyContent: "space-evenly" }}>
