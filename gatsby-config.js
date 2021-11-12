@@ -15,5 +15,6 @@ module.exports = {
         options: {
             // Add any options here
         },
-    }, ],
+
+    }, { resolve: `gatsby-plugin-no-sourcemaps` }, ],
 };

@@ -18,8 +18,8 @@ const MainWrapper =styled.div`
 
     }
     @media only screen and ${breakpoint.device.lg}{
-        paddinf: 30px 30px;
-max-height: 99vh;
+        padding: 30px 30px; 
+        max-height: 99vh;
     }
 `
 

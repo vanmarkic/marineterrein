@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import Slider, { Range, Handle, SliderTooltip } from 'rc-slider';
-import 'rc-slider/assets/index.css';
+// import 'rc-slider/assets/index.css';
+
 import styled from "styled-components"
 import * as d3Array from 'd3-array'
 // import { schemeYlOrRd as scheme, interpolateYlOrRd } from 'd3-scale-chromatic'
@@ -20,6 +21,8 @@ import densityPeakPerDay from "../../content/density_day.json"
 
 import weatherData from "../../content/schiphol_weather.json"
 
+import remarkableDates from './remarkableDates';
+
 
 import Picnic from "./Map/ZonesWithDots/picnic"
 import Water from "./Map/ZonesWithDots/water"
@@ -37,69 +40,29 @@ const minDensity = d3Array.min(Object.values(densityPeakPerDay).map(el => el))
 const maxDensity = d3Array.max(Object.values(densityPeakPerDay).map(el => el.SwimmingArea))
 
 
-const waterMin = d3Array.min(Object.values(camData.content.water))
-const waterMax = d3Array.max(Object.values(camData.content.water))
-const picnicMin = d3Array.min(Object.values(camData.content.picnic))
-const picnicMax = d3Array.max(Object.values(camData.content.picnic))
-const gateMin = d3Array.min(Object.values(camData.content.gate))
-const gateMax = d3Array.max(Object.values(camData.content.gate))
-const fitnessMin = d3Array.min(Object.values(camData.content.fitness))
-const fitnessMax = d3Array.max(Object.values(camData.content.fitness))
+const markPoints = {}
+
+remarkableDates.forEach((el, idx) => {
+  markPoints[weatherDataDates.indexOf(el.date)] = {
+    style: {},
+    label: el.title,
+    undertitle: el.undertitle,
+    link: el.link,
+    date: el.date
+  }
+})
+
+console.log(markPoints)
+
+
 const temperatureMin = d3Array.min(weatherDataAverageTemp)
 const temperatureMax = d3Array.max(weatherDataAverageTemp)
 
-
-
-
-const extents = {
-  water: { min: waterMin, max: waterMax, range: waterMax - waterMin },
-  gate: { min: gateMin, max: gateMax, range: gateMax - gateMin },
-  picnic: { min: picnicMin, max: picnicMax, range: picnicMax - picnicMin },
-  fitness: { min: fitnessMin, max: fitnessMax, range: fitnessMax - fitnessMin },
-  temperature: { min: temperatureMin, max: temperatureMax, range: temperatureMax - temperatureMin },
-
-}
-
-
-let myData = [0, 1, 2, 3, 4];
-
-let densityColors = ['white', "#ffffb2", "#fecc5c", "#fd8d3c", "#bd0026"]
-let densityLabels = ['no data', "0-10", "10-20", "20-30", "30-40"]
-let densityPictures = ['no-data', "0-10", "10-20", "20-30", "30-40"]
-
-
-let quantileScale = scaleQuantile()
-  .domain(myData)
-  .range(['#ffffb2"', '#fecc5c', '#fd8d3c', "#e31a1c"]);
-
-let thresholdScale = scaleThreshold()
-  .domain([0, 1, 2, 3])
-  .range(densityColors);
-
-
-
-const sliderStyle = {
-  // width: '85vw',
-  marginTop: 'auto', marginBottom: 'auto'
-};
-
-// const getRatio = (key, amount) => amount / extents[key].range
-
-// const getColor = (key, density) => {
-//   // const ratio = getRatio(key, amount)
-//   // return interpolateYlOrRd(ratio)
-// // TODO create 4 discrete values/colors based on differents densities
-//   // ["#ffffb2","#fecc5c","#fd8d3c","#e31a1c"]
-
-//    return 
-// }
-
 const tempColors = scaleLinear()
-  .domain([extents.temperature.min, 10, extents.temperature.max])
+  .domain([temperatureMin, 10, temperatureMax])
   .range(['cyan', 'white', 'red']);
 
 const temperatureColors = weatherDataAverageTemp.map(t => {
-
   return tempColors(t)
 })
 
@@ -118,6 +81,10 @@ const totalAmountOfVisitors = weatherDataDates.map((el, idx) => {
 
 
 })
+
+const sliderStyle = {
+  marginTop: 'auto', marginBottom: 'auto'
+};
 
 
 const Button = styled.div`
@@ -160,7 +127,7 @@ const Wrapper = styled.div`
 padding:20px;
     }
     @media only screen and ${breakpoint.device.lg}{
-        justify-content: space-between;
+        justify-content: center;
 padding:20px;
 padding: 100px , 0px;
     }
@@ -203,7 +170,6 @@ const LegendWrapper = styled.div`
     }
 `;
 const Legend = styled.div`
-
     display: flex;
     flex-direction:row;
     @media only screen and ${breakpoint.device.xs}{
@@ -227,25 +193,25 @@ justify-content: flex-end;
 `;
 
 
-const AmountsContainer = styled.div`
-        max-width: 250px;
-        min-width: 250px;
-`
+// const AmountsContainer = styled.div`
+//         max-width: 250px;
+//         min-width: 250px;
+// `
 
-const Thermometer = styled.div`
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        font-size: 1em;
-        font-weight: 700;
-        margin:15px;
-        background: rgb(11,11,11);
-        background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
-`
+// const Thermometer = styled.div`
+//         width: 60px;
+//         height: 60px;
+//         border-radius: 50%;
+//         display: flex;
+//         color: white;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 1em;
+//         font-weight: 700;
+//         margin:15px;
+//         background: rgb(11,11,11);
+//         background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
+// `
 
 
 const Metrics = styled.h2`
@@ -278,16 +244,6 @@ const handle = props => {
   );
 };
 
-// const DensityLabel = ({ label, color, picture }) => (
-//     <Picture file={picture} />
-// )
-
-const DensityLabel = styled.div(({ label, color, picture }) => `
-    min-width: 400px;  
-    background-image: url("../images/${picture}.png");
-`)
-
-
 
 const TempStrip = () => {
   return (<svg height="10" width="100%">
@@ -312,37 +268,22 @@ const ZonesColors = () => {
   const [intervalId, setIntervalId] = useState(undefined);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  let picnicAmount = camData.content.picnic[weatherDataDates[dateIndex]]
-  let waterAmount = camData.content.water[weatherDataDates[dateIndex]]
-  let fitnessAmount = camData.content.fitness[weatherDataDates[dateIndex]]
-  let gateAmount = camData.content.gate[weatherDataDates[dateIndex]]
 
-  let picnicDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
-    densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'] != ''
-    ?
-    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Picnic'])) * 3
-    : undefined
-
-  let waterDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
-    densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'] != ''
-    ?
-    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['SwimmingArea'])) * 3
-    : undefined
-  let fitnessDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
-    densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'] != ''
-    ?
-    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Fitness'])) * 3
-    : undefined
-  let gateDensity = densityPeakPerDay[weatherDataDates[dateIndex]] &&
-    densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'] != ''
-    ?
-    Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]]['Terrace'])) * 3
-    : undefined
+  const getDensity = (areaName) => {
+    return densityPeakPerDay[weatherDataDates[dateIndex]] &&
+      densityPeakPerDay[weatherDataDates[dateIndex]][areaName] != ''
+      ?
+      Math.round(parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]][areaName])) * 3
+      : undefined
+  }
 
   useEffect(() => {
-    console.log(picnicDensity)
     if (dateIndex === weatherDataDates.length - 1) clearInterval(intervalId)
   }, [dateIndex]);
+
+  useEffect(() => {
+    playSlider()
+  }, []);
 
   const playSlider = () => {
     if (isPlaying && intervalId) {
@@ -355,42 +296,12 @@ const ZonesColors = () => {
     setIsPlaying(true)
   }
 
-
-
-
-
   return (
 
     <Wrapper>
 
-
-
-
       <TopComponent>
-        <LegendWrapper>
-          <Legend>
-
-          </Legend>
-          <Legend>
-
-          </Legend>
-          <Legend>
-
-          </Legend>
-          <Legend>
-
-          </Legend>
-
-        </LegendWrapper>
-        <Row style={{ height: '65vh' }}>
-          <MtMap>
-            <Picnic amount={picnicDensity} />
-            <Water amount={waterDensity} />
-            <Fitness amount={fitnessDensity} />
-            <Gate amount={gateDensity} />
-          </MtMap>
-        </Row>
-        <LegendWrapper>
+        <LegendWrapper style={{ justifyContent: 'center', alignItems: 'end', width:"100px" }}>
           <Legend style={{ color: 'lightblue' }}>
             Water
           </Legend>
@@ -403,19 +314,38 @@ const ZonesColors = () => {
           <Legend style={{ color: 'yellow' }}>
             Picnic
           </Legend>
-
         </LegendWrapper>
 
+        <Row style={{ height: '65vh' }}>
+          <MtMap>
+            <Picnic amount={getDensity('Picnic')} />
+            <Water amount={getDensity('SwimmingArea')} />
+            <Fitness amount={getDensity('Fitness')} />
+            <Gate amount={getDensity('Terrace')} />
+          </MtMap>
+        </Row>
+
+        <LegendWrapper style={{justifyContent: 'end', marginRight: '-200px'}}>
+          <Legend></Legend>
+          {markPoints[dateIndex] && <>
+            <Metrics>
+              {markPoints[dateIndex].label}
+            </Metrics>
+            <Legend>
+              {markPoints[dateIndex].undertitle}
+            </Legend>
+            <Legend>
+              <a href={markPoints[dateIndex].link}>Read Article</a>
+            </Legend>
+          </>}
+        </LegendWrapper>
 
       </TopComponent>
 
       <Row style={{ justifyContent: "space-evenly", width: "100%" }}>
-
-
         <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
           <div>temperature</div>
           <Metrics>
-
             {weatherDataAverageTemp[dateIndex]}°C
           </Metrics>
         </div>
@@ -427,19 +357,15 @@ const ZonesColors = () => {
             <Metrics>{weatherDataDates[dateIndex].substring(0, 4)}</Metrics>
           </Row>
         </div>
-
         <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }} >
           <div>visitors</div>
           <Metrics>
             {totalAmountOfVisitors[dateIndex]}
           </Metrics>
         </div>
-
       </Row>
 
-      <Row
-      // style={{ maxWidth: '95vw' }}
-      >
+      <Row>
         <div style={{
           "WebkitTouchCallout": "none",
           "WebkitUserSelect": "none",
@@ -450,27 +376,16 @@ const ZonesColors = () => {
           "WebkitTapHighlightColor": "rgba(0,0,0,0)",
           display: 'flex', flexDirection: 'column',
         }}>
-          <Row style={sliderStyle}>
 
+          <Row style={sliderStyle}>
             <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
           </Row>
           <Row style={sliderStyle}>
             <TempStrip />
           </Row>
-          {/* <Row style={{ width: '100%', justifyContent: 'space-around' , marginLeft: '1.4%'}}>
-            <VerticalNeedle />
-            <VerticalNeedle />
-            <VerticalNeedle />
-            <VerticalNeedle />
-          </Row> */}
           <Row style={{ ...sliderStyle, marginTop: "30px" }}>
             <Slider
-              marks={{
-                330: 'Een nieuwe stadswijk',
-                210: 'Drukte in de Fitnesstuin',
-                69: 'Crowd control',
-                150: 'Van wie zijn de data? '
-              }}
+              marks={markPoints}
               min={0}
               max={weatherDataDates.length - 1}
               included={false}
@@ -483,9 +398,9 @@ const ZonesColors = () => {
                 width: 28,
                 marginLeft: 0,
                 marginTop: -13,
-                backgroundColor: 'black',
+                backgroundColor: 'rgba(0,0,0,0)',
               }}
-              dotStyle={{ backgroundColor: 'black' }}
+              dotStyle={{ borderColor: 'black', backgroundColor: 'white', height: '20px', width: '20px', marginLeft: '-10px', bottom: '-7px' }}
               handle={handle}
             />
 
