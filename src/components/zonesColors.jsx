@@ -44,7 +44,9 @@ const markPoints = {}
 
 remarkableDates.forEach((el, idx) => {
   markPoints[weatherDataDates.indexOf(el.date)] = {
-    style: {},
+    style: {
+      display: 'none',
+    },
     label: el.title,
     undertitle: el.undertitle,
     link: el.link,
@@ -88,6 +90,8 @@ const sliderStyle = {
 
 
 const Button = styled.div`
+display: none;
+@media only screen and ${breakpoint.device.sm}{
 z-index:100;
   border-radius: 3px;
   padding: 0.5rem .5rem;
@@ -100,6 +104,8 @@ z-index:100;
 align-self: flex-end;
 justify-content: center;
 text-align: center;
+
+    }
 
 `
 const Row = styled.div`
@@ -116,18 +122,45 @@ const Wrapper = styled.div`
    display: flex;
     flex-direction:column;
     @media only screen and ${breakpoint.device.xs}{
-      height:95vh;
+      height:90vh;
       justify-content: space-between;
       width:90vw;
       margin:auto;
+      div#map {
+          order:1;
+          height: 50vh !important;
 
-    }
+        }
+      div#colors {
+          order:2
+}
+      div#infos {
+          height:100px ;
+          order:3;
+          width:300px;
+}
+        }
     @media only screen and ${breakpoint.device.sm}{
          justify-content: space-between;
 padding:20px;
+                div#map {
+          order:2;
+          justify-content: flex-end;
+        width:50%;
+
+        }
+      div#colors {
+          order:1;
+            width:25%;
+}
+      div#infos {
+          order:3;
+          width:220px;
+          align-self: end;
+}
     }
     @media only screen and ${breakpoint.device.lg}{
-        justify-content: center;
+        justify-content: space-around;
 padding:20px;
 padding: 100px , 0px;
     }
@@ -144,8 +177,8 @@ const TopComponent = styled.div`
     }
     @media only screen and ${breakpoint.device.lg}{
         flex-direction: row;
-justify-content: space-around;
-width:95vw;
+          justify-content: space-around;
+          width:95vw;
 
     }
 `;
@@ -169,6 +202,7 @@ const LegendWrapper = styled.div`
         margin:20px 0px;
     }
 `;
+
 const Legend = styled.div`
     display: flex;
     flex-direction:row;
@@ -176,6 +210,8 @@ const Legend = styled.div`
         flex-direction: column;
         align-items: center;
 margin: 0px 10px;
+        font-size:12px;
+  
     }
     @media only screen and ${breakpoint.device.sm}{
         flex-direction: row;
@@ -193,44 +229,44 @@ justify-content: flex-end;
 `;
 
 
-// const AmountsContainer = styled.div`
-//         max-width: 250px;
-//         min-width: 250px;
-// `
-
-// const Thermometer = styled.div`
-//         width: 60px;
-//         height: 60px;
-//         border-radius: 50%;
-//         display: flex;
-//         color: white;
-//         justify-content: center;
-//         align-items: center;
-//         font-size: 1em;
-//         font-weight: 700;
-//         margin:15px;
-//         background: rgb(11,11,11);
-//         background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(89,89,89,1) 100%);
-// `
-
-
 const Metrics = styled.h2`
   margin:0px;
+       @media only screen and ${breakpoint.device.xs}{
+
+        font-size: 16px;
+ 
+    }
+    @media only screen and ${breakpoint.device.sm}{
+            font-size: 24px;
+    }
+
+`
+const DataLayers = styled.div`
+
+
+        display: none;
+  @media only screen and ${breakpoint.device.sm}{
+display: block;
+    }
 `
 
-const Bar = styled.div`
-  width: ${props => props.ratio * 100}%;
-  background-color: darkblue;
-  height: 20px;
+// const Bar = styled.div`
+//   width: ${props => props.ratio * 100}%;
+//   background-color: darkblue;
+//   height: 20px;
+// `
 
-`
 const VerticalNeedle = styled.div`
-  display: block;
+display: none;
+ 
+@media only screen and ${breakpoint.device.sm}{
+   display: block;
   width:1px;
   height: 10vh;
+  background-color:white;
  margin: auto;
  margin-top: -10vh;
-  background-color:white;
+}
 `
 
 const handle = props => {
@@ -296,12 +332,22 @@ const ZonesColors = () => {
     setIsPlaying(true)
   }
 
+  const stopSlider = () => {
+    if (isPlaying && intervalId) {
+      clearInterval(intervalId)
+      setIsPlaying(false)
+      return
+    }
+  }
+
+
   return (
 
     <Wrapper>
 
       <TopComponent>
-        <LegendWrapper style={{ justifyContent: 'center', alignItems: 'end', width:"100px" }}>
+
+        <LegendWrapper id='colors' style={{ justifyContent: 'center', alignItems: 'end', minWidth: "100px", margin: '15px auto' }}>
           <Legend style={{ color: 'lightblue' }}>
             Water
           </Legend>
@@ -316,7 +362,7 @@ const ZonesColors = () => {
           </Legend>
         </LegendWrapper>
 
-        <Row style={{ height: '65vh' }}>
+        <Row id='map'>
           <MtMap>
             <Picnic amount={getDensity('Picnic')} />
             <Water amount={getDensity('SwimmingArea')} />
@@ -325,18 +371,17 @@ const ZonesColors = () => {
           </MtMap>
         </Row>
 
-        <LegendWrapper style={{justifyContent: 'end', marginRight: '-200px'}}>
-          <Legend></Legend>
+        <LegendWrapper id='infos' style={{ flexDirection: 'column', justifyContent: 'end', width:'220px', maxWidth: '300px', margin:'15px auto'}}>
+
           {markPoints[dateIndex] && <>
             <Metrics>
-              {markPoints[dateIndex].label}
+              <a href={markPoints[dateIndex].link}>{markPoints[dateIndex].label}</a>
             </Metrics>
             <Legend>
               {markPoints[dateIndex].undertitle}
             </Legend>
-            <Legend>
-              <a href={markPoints[dateIndex].link}>Read Article</a>
-            </Legend>
+
+
           </>}
         </LegendWrapper>
 
@@ -377,14 +422,19 @@ const ZonesColors = () => {
           display: 'flex', flexDirection: 'column',
         }}>
 
-          <Row style={sliderStyle}>
-            <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
-          </Row>
-          <Row style={sliderStyle}>
-            <TempStrip />
-          </Row>
-          <Row style={{ ...sliderStyle, marginTop: "30px" }}>
+
+          <DataLayers>
+            <Row style={sliderStyle}>
+              <BarChart data={totalAmountOfVisitors} height="100" width="4000" />
+            </Row>
+            <Row style={sliderStyle}>
+              <TempStrip />
+            </Row>
+          </DataLayers>
+
+          <Row onClick={stopSlider} style={{ ...sliderStyle, marginTop: "30px", width: '90vw' }}>
             <Slider
+
               marks={markPoints}
               min={0}
               max={weatherDataDates.length - 1}
