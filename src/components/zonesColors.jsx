@@ -299,7 +299,7 @@ const ZonesColors = () => {
       densityPeakPerDay[weatherDataDates[dateIndex]][areaName] != ""
       ? Math.round(
           parseFloat(densityPeakPerDay[weatherDataDates[dateIndex]][areaName])
-        ) * 3
+        ) * 6
       : undefined;
   };
 
@@ -309,7 +309,7 @@ const ZonesColors = () => {
 
   useEffect(() => {
     playSlider();
-  });
+  }, []);
 
   const playSlider = () => {
     if (isPlaying && intervalId) {
